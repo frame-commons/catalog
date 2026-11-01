@@ -31,6 +31,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with: {ref: main}   # the newest main, not the commit that triggered a queued run
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: pip install pyyaml
@@ -44,6 +45,6 @@ jobs:
           git add catalog.json README.md COMPAT.md PROBLEMS.md
           if ! git diff --cached --quiet; then
             git commit -m "catalog: rebuild $(date -u +%F)"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main   # generated files: keep this fresh build
             git push origin HEAD:main
           fi
