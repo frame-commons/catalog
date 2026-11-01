@@ -23,7 +23,8 @@ A tool is a pick when it meets most of these, and the text says which ones it mi
 
 1. **Source is public.** Open source is preferred. Source-available or unlicensed code is flagged
    ("no licence file" means the code is public but not open source until its author adds one).
-   Closed tools appear only where they are the only option, and are marked as such.
+   Closed tools appear only where they are the only option, or where Valve's own built-in feature is
+   the right answer (listed first and marked closed).
 2. **Maintained.** A push in the last few weeks, issues answered.
 3. **Evidence it works on the Frame.** A README that names the headset OS or SteamVR version it was
    tested on, a test record, or an issue thread from users.
@@ -33,10 +34,10 @@ A tool is a pick when it meets most of these, and the text says which ones it mi
 
 Valve's own features count as options too, and where one is the right answer it is listed first.
 
-**Disclosure.** This guide is kept by the frame-commons catalog. Two listed projects are ours:
-[frame-commons/catalog](https://github.com/frame-commons/catalog) itself and
-[arealjim/frame-stream](https://github.com/arealjim/frame-stream). Both are marked "(maintained by
-this org's admin)" and are not ranked above alternatives without public evidence.
+**Disclosure.** This guide is written by frame-commons' admin (@arealjim). One listed project belongs
+to this org ([frame-commons/catalog](https://github.com/frame-commons/catalog)) and one to the admin
+personally ([arealjim/frame-stream](https://github.com/arealjim/frame-stream)). Both are marked
+"(maintained by this org's admin)" and are not ranked above alternatives without public evidence.
 
 ## Before you install anything
 
@@ -45,10 +46,10 @@ this org's admin)" and are not ranked above alternatives without public evidence
   first.
 - **Developer Mode** (Settings → System) turns on SSH and other developer access; many tools need it.
   See Valve's
-  [Frame setup page](https://partner.steamgames.com/doc/steamhardware/steamframe/setup).
-- **Many projects are weeks old, tested on one headset, and say they were written with AI help.**
-  That is fine, and most say so plainly, but it means "works for the author" is often the whole
-  evidence.
+  [Frame setup page](https://partner.steamgames.com/doc/steamhardware/steamframe/setup). Set a strong
+  password when you turn it on: with SSH enabled, anyone on your network who knows it can log in.
+- **Many projects are weeks old and tested on one headset,** so "works for the author" is often the
+  whole evidence.
 - **Updates break things.** Where a README names a headset OS version, it is usually 0.3.x or 0.4.x.
   SteamOS 0.5.6 is on the beta channel as of this review (per
   [Frame Control's notes](https://github.com/saphid/frame-control/blob/main/docs/steamos-2026-10-compat.md)),
@@ -65,13 +66,13 @@ this org's admin)" and are not ranked above alternatives without public evidence
 Windows is the host Valve documents; Linux hosts work for many users (see below). Nothing to
 install on the headset, and it does eye-tracked foveated streaming.
 
-- *Evidence:* Valve's supported path, and the one reviewers measured.
+- *Evidence:* Valve's supported path.
 - *Linux hosts:* launch-month reports varied by distribution, desktop session and GPU. If a VR
   title launched from the headset never starts SteamVR, see
   [SteamVR-for-Linux #962](https://github.com/ValveSoftware/SteamVR-for-Linux/issues/962) for the
   workarounds people used (start SteamVR on the desktop first; one commenter also needed
-  `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1`). The issue was closed on 2026-10-02 without a
-  release note we could find, so it may or may not be fixed for you.
+  `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1`). Valve closed the issue on 2026-09-27, saying a fix
+  was in progress; we found no later note that it has shipped, so the workarounds may still be needed.
 - *Limits:* closed source; no macOS host (see below).
 
 **Main open alternative: [WiVRn](https://github.com/WiVRn/WiVRn)** (GPL-3.0, 1831★, pushed
@@ -93,7 +94,8 @@ install on the headset, and it does eye-tracked foveated streaming.
   ([#3411](https://github.com/alvr-org/ALVR/issues/3411)).
 
 **For flat games and the desktop: [Moonlight XR for Frame](https://github.com/simplysanatori/moonlight-xr-steam-frame)**
-(GPL-3.0, 17★, pushed 2026-11-01), a native client for [Sunshine](https://github.com/LizardByte/Sunshine)
+(GPL-3.0, 17★, pushed 2026-11-01), a native port of Sean Gilleece's
+[Moonlight XR](https://github.com/Gilleece/moonlight-android-xr), a client for [Sunshine](https://github.com/LizardByte/Sunshine)
 or [Apollo](https://github.com/ClassicOldSong/Apollo) hosts.
 
 - *Evidence:* v1.1.1 stable; per its README, used on one Frame (SteamOS 0.4.5, SteamVR 2.18)
@@ -128,9 +130,10 @@ Windows or Linux PC.
   clients for Quest, Pico and Vision Pro. Its Steam Frame client is an open draft,
   [PR #30](https://github.com/demonixis/oxrsys/pull/30), not merged.
 - **[frame-stream](https://github.com/arealjim/frame-stream)** (MIT plus upstream licences for
-  patches; **maintained by this org's admin**) builds on OXRSys and PR #30 to add a Frame client,
-  runtime fixes, engine sample projects (Godot, Unity, Unreal) and a Wine path for some Windows VR
-  games. *Evidence:* its own README only. It was published on 2026-10-30, has no outside
+  patches; **maintained by this org's admin**) builds on OXRSys: it patches the Frame client from
+  PR #30 (by nburns), adds Mac-side runtime fixes and engine sample projects (Godot, Unity, Unreal),
+  and adds a Wine path for some Windows VR games, building on
+  [oxrsys-winebridge](https://github.com/anoshmisiosdev/oxrsys-winebridge). *Evidence:* its own README only. It was published on 2026-10-30, has no outside
   reports yet (no stars or issues), and says it was tested on macOS 27 on Apple Silicon only. Its
   latency and game claims have not been reproduced by anyone else.
 
@@ -154,7 +157,7 @@ own panels, a mouse pointer that works across all of SteamVR, and experimental g
   an update moved or deleted. Stable and experimental channels; prebuilt releases. Has a Discord and an
   issue tracker.
 - *Limits:* about 3 GB of disk (it installs a distrobox build container in your home folder). It
-  pauses while a VR game runs. Gaze mode reads eye-tracker data that SteamOS 0.4 moved once already,
+  pauses during VR games by default, to hand the game the headset (configurable). Gaze mode reads eye-tracker data that SteamOS 0.4 moved once already,
   so it may need an update after headset updates.
 
 **Alternative: [WayVR](https://github.com/wayvr-org/wayvr)** (GPL-3.0, 1470★, pushed 2026-10-30),
@@ -170,7 +173,7 @@ the long-standing Linux VR overlay (formerly wlx-overlay-s).
 
 - [tovakai/frametop](https://github.com/tovakai/frametop) (MIT): a Frametop fork adding a plugin
   framework.
-- [Framely](https://github.com/SteamFramelyHomebrew/framely) (AGPL-3.0): a spatial launcher. Early.
+- [Framely](https://github.com/SteamFramelyHomebrew/framely) (AGPL-3.0): a spatial launcher, created 2026-10-03.
 - [Frame Tweaks](https://github.com/AstronautCheetah/frame-tweaks) and
   [steam-frame-nix](https://github.com/lhns/steam-frame-nix) fix many desktop-mode rough edges
   (clipboard, keyboard, KDE wallet, window curvature); see Tooling.
@@ -187,11 +190,12 @@ you only need finger poses in social VR, that is the stable option.
 - [steam-frame-hand-tracking](https://github.com/spyjacob/steam-frame-hand-tracking) (MIT, pushed
   2026-10-17): bare hands in PC-streamed games, tracked on the headset and sent to the PC as Frame
   controllers. *Limits, per its README:* it runs the headset CPU hot (hottest core in the high 80s °C,
-  peaks of 93–95 °C), has a thermal watchdog, is laggy on fast wrist turns, and adds a Vulkan layer
+  peaks of 93–95 °C, and the headset rebooted once under heavy load), has a thermal watchdog, is laggy on fast wrist turns, and adds a Vulkan layer
   to the SteamVR compositor.
 - Frametop's [hands module](https://github.com/Frametop/frametop/blob/main/hands/README.md) (MIT
   code): IR-camera hand tracking with MediaPipe models on ncnn, used for hand cut-outs and pinch
-  clicks. *Limits:* marked "deferred" (not offered by the installer) because of CPU cost. The stock
+  clicks. *Limits:* held back from the stable channel ("deferred") because of its CPU cost; the
+  experimental channel's installer offers it, on by default. The stock
   MediaPipe models are Apache-2.0; its fine-tuned models on Hugging Face are
   [CC BY-NC 4.0](https://huggingface.co/DeeJanuz/frametop-hands-models), so not for commercial use.
 - [frame-hands](https://github.com/eyfeldb/frame-hands) (MIT): headset tracker plus SteamVR driver
@@ -241,7 +245,7 @@ either controller.
 
 **Pick for hands-free toggling: [KnockThru](https://github.com/VioletTides/KnockThru)** (MIT, 12★,
 pushed 2026-10-28). Knock twice on the headset to see the room; three times to switch between
-blended and room-only.
+blended and room-only. SquintThru (below) is also hands-free but has no licence file.
 
 - *Evidence:* CI, and its detector is tested against motion recorded on a Frame (the recordings and
   rules are documented).
@@ -262,12 +266,12 @@ blended and room-only.
 - [frame-passthrough-pip](https://github.com/Sippbox/frame-passthrough-pip) (MIT): the passthrough
   view as a small panel over any game.
 - [roommate-radar](https://github.com/danthedaniel/roommate-radar) (AGPL-3.0): highlights people
-  nearby with on-headset object detection. Days old.
+  nearby with on-headset object detection. Created 2026-10-25.
 
 ## Voice and microphone
 
-**Dictation: no single pick yet.** Five tools exist, all MIT, all created since late September, each
-tested by its author on one headset. All run speech recognition on the headset by default. Choose by
+**Dictation: no single pick yet.** We found five standalone tools, all MIT and all created since late
+September. None has independent test reports yet. All run speech recognition on the headset by default. Choose by
 how you want to work:
 
 | Tool | Model | Good for | Notes |
@@ -282,8 +286,9 @@ Frametop and Frame Tweaks also bundle dictation as an option.
 
 **Microphone: [Frame Mic Tuner](https://github.com/sasaken1102r/frame-mic-tuner)** (MIT, 43★,
 pushed 2026-10-31). A SteamVR panel that switches echo cancellation and noise suppression per audio
-output (speakers, USB-C, Bluetooth) and shows the live signal path. No telemetry beyond an update
-check, per its README.
+output (speakers, USB-C, Bluetooth) and shows the live signal path. No telemetry, per its README. With
+update checks on, it contacts GitHub daily and the author's site for an app list; both can be turned
+off.
 
 **Known bug workaround: [steam-frame-audio-fix](https://github.com/Rangermike96/steam-frame-audio-fix)**
 (MIT). Brings back external-headphone audio that goes silent when an app opens the mic, a bug still
@@ -296,8 +301,7 @@ headset; it warns when your PipeWire version differs from the one it was tested 
 215★, pushed 2026-10-18). Keeps a Lighthouse play space aligned with the Frame's own tracking by
 watching base-station flashes with the headset cameras, with nothing mounted on the headset.
 
-- *Evidence:* Frame support by a named contributor; installs without root on the Frame per its
-  README; 29 open issues.
+- *Evidence:* Frame support by @NotZoeyDev; installs without root on the Frame per its README.
 
 **Headset buttons: [frame-aux-shortcuts](https://github.com/sasaken1102r/frame-aux-shortcuts)** (MIT):
 actions for one to five presses, a long press and taps on the headset.
@@ -338,7 +342,7 @@ following your head or worn on a controller like a watch.
   [steam-frame-fan-panel](https://github.com/dhies23/steam-frame-fan-panel) (GPL-3.0). Both need
   root to install, and Fan Control says its cooling components run as root. Changing cooling
   behaviour on a headset you wear is your call; neither has independent reports yet.
-- [petplay](https://github.com/goodpuppies/petplay) (modular overlay system) has *no licence file*.
+- [petplay](https://github.com/goodpuppies/petplay) : a modular overlay system for SteamVR. It has *no licence file*.
 
 ## Media
 
@@ -368,15 +372,13 @@ Valve's Devkit Client can install your own builds.
 [OVRPort](https://github.com/Android-XR-Bridge/OVRPort) and Lepton), installs Android, Linux and
 Windows apps, and adds them to your Steam library. Runs on Windows, macOS and Linux.
 
-- *Evidence:* the most-starred tool in this area, with the busiest issue tracker (133 open issues);
-  keeps a
+- *Evidence:* the most-starred tool in this area, with an active issue tracker; keeps a
   [list of tested games](https://github.com/spoopyghosty0/frameport/blob/main/docs/GAMES.md) with
   per-game recipes.
 - *Limits:* Quest conversion can't fix games that check their licence through the Oculus app; PC VR
   on the headset through Proton is marked experimental; x86-64 Linux apps run through FEX, slower.
   [openxr-dispatcher-open](https://github.com/Molier/openxr-dispatcher-open) describes OVRPort's
-  bundled OpenXR dispatcher as closed and offers an open replacement (GitHub can't identify its
-  licence; check the repo).
+  bundled OpenXR dispatcher as closed and offers an open replacement (MIT).
 
 **Alternatives**
 
@@ -384,8 +386,9 @@ Windows apps, and adds them to your Steam library. Runs on Windows, macOS and Li
   Windows apps and Linux ARM64 builds through Valve's devkit protocol. No telemetry, per its README.
 - [FrameLoad](https://github.com/Crypto90/frameload) (GPL-3.0): installs and ports Android VR games
   from inside the headset, no PC; uses FramePort for porting.
-- FrameDrop, whose install buttons appear in several READMEs, is a sideloader whose source is not
-  published (per FramePort's comparison table), so it falls outside this guide. Those projects also
+- FrameDrop, whose install buttons appear in several READMEs, is a free (donationware) sideloader.
+  We found no published source (no public repository; its site links none), so it falls outside
+  this guide's criteria. Those projects also
   offer plain downloads.
 
 **Specific fixes**
@@ -397,14 +400,15 @@ Windows apps, and adds them to your Steam library. Runs on Windows, macOS and Li
 - [ovrplugin-openxr-shim](https://github.com/daniel-lynch/ovrplugin-openxr-shim) (MIT): Meta's
   OVRPlugin API on OpenXR for VrApi-era Quest titles. Its README reports results on a Quest 2, not
   yet on the Frame.
-- [steamvr-home-frame](https://github.com/Puffy288/steamvr-home-frame): SteamVR Home on the headset,
-  "a fun experiment". Licence unclear.
+- [steamvr-home-frame](https://github.com/Puffy288/steamvr-home-frame) (MIT for its own code;
+  downloaded Valve components keep their own terms): SteamVR Home on the headset, "a fun experiment"
+  per its README.
 - The audio and wireless-adapter fixes are under Voice and PC streaming.
 
 ## Tooling
 
 **Headset manager: [Frame Control](https://github.com/saphid/frame-control)** (MIT, 127★, pushed
-2026-11-01). Manage the headset from macOS, Windows, Linux or iPhone over SSH: live view, installs,
+2026-11-01). Manage the headset from macOS, Windows, Linux or a build-it-yourself iPhone app, over SSH: live view, installs,
 files, text, battery and status.
 
 - *Evidence:* publishes a
@@ -450,7 +454,8 @@ Frame apps from GitHub releases and discovers new ones. *No licence file.*
 
 ## Hardware
 
-**Nothing solid yet** in open hardware beyond single-purpose prints.
+**Open hardware is early:** a printable mount, a camera-module scan, and some PCB designs still in
+progress.
 
 - [steam-frame-pd100-mount](https://github.com/DeeJanuz/steam-frame-pd100-mount) (MIT): 3D-printable
   mounts for a BoboVR PD100 battery dock on the rear pod.

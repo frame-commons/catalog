@@ -6,7 +6,7 @@
 
 # Camera access
 - {repo: Frametop/frametop, provides: [desktop, input, eyes, hands, camera], runs_on: headset,
-   note: "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (deferred: built and runnable by hand, not in its installer)"}
+   note: "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (experimental channel; held back from stable for its CPU cost)"}
 - {repo: Curtis-VL/FrameEyeCameraFeed, provides: [camera, eyes], runs_on: headset, note: "Eye-camera feeds for EyeTrackVR"}
 - {repo: danthedaniel/roommate-radar, provides: [camera, passthrough], note: "Highlights people nearby using the tracking cameras and object detection"}
 - {repo: Sippbox/frame-passthrough-pip, provides: [camera, passthrough], note: "Passthrough camera as a picture-in-picture panel"}
