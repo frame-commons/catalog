@@ -6,7 +6,7 @@
 
 # Camera access
 - {repo: Frametop/frametop, provides: [desktop, input, eyes, hands, camera], runs_on: headset,
-   note: "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental hand tracking"}
+   note: "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (deferred: built and runnable by hand, not in its installer)"}
 - {repo: Curtis-VL/FrameEyeCameraFeed, provides: [camera, eyes], runs_on: headset, note: "Eye-camera feeds for EyeTrackVR"}
 - {repo: danthedaniel/roommate-radar, provides: [camera, passthrough], note: "Highlights people nearby using the tracking cameras and object detection"}
 - {repo: Sippbox/frame-passthrough-pip, provides: [camera, passthrough], note: "Passthrough camera as a picture-in-picture panel"}
@@ -38,7 +38,7 @@
 - {repo: simplysanatori/moonlight-xr-lepton, provides: [streaming], note: "Moonlight XR via Lepton"}
 - {repo: WiVRn/WiVRn, provides: [streaming], runs_on: both, note: "OpenXR streaming from a Linux PC"}
 - {repo: xhuytox/scrcpy4Frame, provides: [streaming], note: "Android phone mirroring in VR"}
-- {repo: demonixis/oxrsys, provides: [streaming], runs_on: pc, note: "OpenXR runtime for macOS that can drive the Frame"}
+- {repo: demonixis/oxrsys, provides: [streaming], runs_on: pc, note: "OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30)"}
 - {repo: arealjim/frame-stream, provides: [streaming], runs_on: both, note: "Streams macOS OpenXR apps to the Frame"}
 
 # Input and voice
