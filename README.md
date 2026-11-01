@@ -44,8 +44,8 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental… | headset | MIT | 330 | 2026-10-29 |  |
-| [Curtis-VL/FrameEyeCameraFeed](https://github.com/Curtis-VL/FrameEyeCameraFeed) | Eye-camera feeds for EyeTrackVR | headset | MIT | 14 | 2026-10-02 |  |
+| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
+| [Curtis-VL/FrameEyeCameraFeed](https://github.com/Curtis-VL/FrameEyeCameraFeed) | Eye-camera feeds for EyeTrackVR | headset | MIT | 15 | 2026-10-02 |  |
 | [Sippbox/frame-passthrough-pip](https://github.com/Sippbox/frame-passthrough-pip) | Passthrough camera as a picture-in-picture panel |  | MIT | 3 | 2026-10-22 |  |
 | [danthedaniel/roommate-radar](https://github.com/danthedaniel/roommate-radar) | Highlights people nearby using the tracking cameras and object detection |  | AGPL-3.0 | 0 | 2026-10-30 |  |
 | [MrDarkMoon/phone-screen](https://github.com/MrDarkMoon/phone-screen) | Tracks a real phone with the tracking cameras and shows it in VR |  | MIT | 0 | 2026-10-28 |  |
@@ -54,7 +54,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental… | headset | MIT | 330 | 2026-10-29 |  |
+| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [spyjacob/steam-frame-hand-tracking](https://github.com/spyjacob/steam-frame-hand-tracking) | Optical hand tracking for PC streaming |  | MIT | 8 | 2026-10-17 |  |
 | [eyfeldb/frame-hands](https://github.com/eyfeldb/frame-hands) | Experimental hand tracking with SteamVR input | headset | MIT | 0 | 2026-10-15 |  |
 
@@ -62,11 +62,11 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental… | headset | MIT | 330 | 2026-10-29 |  |
+| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [sasaken1102r/frameeyeosc](https://github.com/sasaken1102r/frameeyeosc) | frameeyeosc fork: gaze, eyelids, pupils over OSC, LiveLink and a VRCFT module |  | MIT | 115 | 2026-11-01 |  |
 | [konsti219/frameeyeosc](https://github.com/konsti219/frameeyeosc) | Eye-tracking data over OSC |  | MIT | 74 | 2026-10-02 |  |
 | [Project-Babble/Babble-Frame-Runtime](https://github.com/Project-Babble/Babble-Frame-Runtime) | Eye and mouth expressions on the headset, into VRCFaceTracking | headset | GPL-3.0 | 41 | 2026-10-31 |  |
-| [Curtis-VL/FrameEyeCameraFeed](https://github.com/Curtis-VL/FrameEyeCameraFeed) | Eye-camera feeds for EyeTrackVR | headset | MIT | 14 | 2026-10-02 |  |
+| [Curtis-VL/FrameEyeCameraFeed](https://github.com/Curtis-VL/FrameEyeCameraFeed) | Eye-camera feeds for EyeTrackVR | headset | MIT | 15 | 2026-10-02 |  |
 | [hakumaguro/vrcft-steam-frame](https://github.com/hakumaguro/vrcft-steam-frame) | VRCFaceTracking module with a tuning tool |  | MIT | 11 | 2026-10-09 |  |
 | [huntergcook/SquintThru](https://github.com/huntergcook/SquintThru) | Squint to toggle passthrough |  | none found | 6 | 2026-10-30 |  |
 | [miyu0-bit/frameeye-helper](https://github.com/miyu0-bit/frameeye-helper) | Installer for frameeyeosc |  | MIT | 6 | 2026-09-30 |  |
@@ -97,7 +97,7 @@ so its code is public but not open source until its author adds one.
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
 | [WiVRn/WiVRn](https://github.com/WiVRn/WiVRn) | OpenXR streaming from a Linux PC | both | GPL-3.0 | 1831 | 2026-10-30 |  |
-| [demonixis/oxrsys](https://github.com/demonixis/oxrsys) | OpenXR runtime for macOS that can drive the Frame | pc | MPL-2.0 | 114 | 2026-11-01 |  |
+| [demonixis/oxrsys](https://github.com/demonixis/oxrsys) | OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30) | pc | MPL-2.0 | 114 | 2026-11-01 |  |
 | [xhuytox/scrcpy4Frame](https://github.com/xhuytox/scrcpy4Frame) | Android phone mirroring in VR |  | MIT | 19 | 2026-10-24 |  |
 | [simplysanatori/moonlight-xr-steam-frame](https://github.com/simplysanatori/moonlight-xr-steam-frame) | Native Moonlight game-streaming client | headset | GPL-3.0 | 17 | 2026-11-01 |  |
 | [spyjacob/steam-frame-chroma-key](https://github.com/spyjacob/steam-frame-chroma-key) | Chroma-key mixed reality for PC streaming |  | MIT | 8 | 2026-10-11 |  |
@@ -109,7 +109,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental… | headset | MIT | 330 | 2026-10-29 |  |
+| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [CreoleVR/QuestLHSync](https://github.com/CreoleVR/QuestLHSync) | Aligns Lighthouse trackers and controllers to the Frame's tracking |  | MIT | 215 | 2026-10-18 |  |
 | [KominoVR/frame-passthrough-shortcuts](https://github.com/KominoVR/frame-passthrough-shortcuts) | Controller shortcuts for passthrough, including the colour camera module |  | MIT | 27 | 2026-09-25 |  |
 | [baketnk/frame-yap](https://github.com/baketnk/frame-yap) | Voice typing on the headset | headset | MIT | 25 | 2026-11-01 |  |
@@ -142,7 +142,7 @@ so its code is public but not open source until its author adds one.
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
 | [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-10-30 |  |
-| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental… | headset | MIT | 330 | 2026-10-29 |  |
+| [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [SteamFramelyHomebrew/framely](https://github.com/SteamFramelyHomebrew/framely) | Spatial launcher |  | AGPL-3.0 | 5 | 2026-10-30 |  |
 | [tovakai/frametop](https://github.com/tovakai/frametop) | Frametop fork with a plugin framework |  | MIT | 3 | 2026-10-26 |  |
 
@@ -215,7 +215,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [SpeedBreakerProject/speedbreaker](https://github.com/SpeedBreakerProject/speedbreaker) | Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam Deck, Steam Machine,… |  | GPL-3.0 | 575 | 2026-10-31 |  |
+| [SpeedBreakerProject/speedbreaker](https://github.com/SpeedBreakerProject/speedbreaker) | Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam Deck, Steam Machine,… |  | GPL-3.0 | 576 | 2026-10-31 |  |
 | [SpeedBreakerProject/speedbreaker-carbon](https://github.com/SpeedBreakerProject/speedbreaker-carbon) | Unofficial static recompilation of the Xbox 360 version of Need for Speed: Carbon (2006): a native port for Steam Deck, Steam Machine, Stea… |  | GPL-3.0 | 30 | 2026-10-29 |  |
 | [Cesarus85/mjolnir-vr](https://github.com/Cesarus85/mjolnir-vr) | Ringfall: Mjolnir VR – an unofficial VR mod for Halo: Combat Evolved on Meta Quest 3/3S and Steam Frame. Bring your own disc image. |  | AGPL-3.0 | 20 | 2026-10-31 |  |
 | [bigbossafman/VR-Mod-Vibecoding-Wizard](https://github.com/bigbossafman/VR-Mod-Vibecoding-Wizard) | Claude skill that turns a flat PC game into a VR mod |  | MIT | 15 | 2026-09-06 |  |

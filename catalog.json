@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T15:24:56Z",
+ "generated": "2026-11-01T17:26:34Z",
  "manifest_spec": 0,
  "license": "CC0-1.0",
  "vocabulary": [
@@ -622,7 +622,7 @@
    "description": "Yoinks the Frame eye camera feeds and hosts them in a format accepted by EyeTrackVR",
    "note": "Eye-camera feeds for EyeTrackVR",
    "license": "MIT",
-   "stars": 14,
+   "stars": 15,
    "pushed_at": "2026-10-02",
    "archived": false,
    "provides": [
@@ -712,7 +712,7 @@
    "repo": "demonixis/oxrsys",
    "url": "https://github.com/demonixis/oxrsys",
    "description": "OXRSys is an OpenXR runtime for MacOS, unlocking native PCVR on MacOS with various VR headsets, including Meta Quest and Apple Vision Pro",
-   "note": "OpenXR runtime for macOS that can drive the Frame",
+   "note": "OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30)",
    "license": "MPL-2.0",
    "stars": 114,
    "pushed_at": "2026-11-01",
@@ -858,7 +858,7 @@
    "repo": "Frametop/frametop",
    "url": "https://github.com/Frametop/frametop",
    "description": "Multi-screen KDE Plasma desktop and universal 3D mouse for the Valve Steam Frame (SteamVR)",
-   "note": "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental hand tracking",
+   "note": "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (deferred: built and runnable by hand, not in its installer)",
    "license": "MIT",
    "stars": 330,
    "pushed_at": "2026-10-29",
@@ -1669,7 +1669,7 @@
    "description": "Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam Deck, Steam Machine, Steam Frame, Linux and Mac (iPhone/iPad: sideload the experimental IPA or build it yourself). Bring your own disc: no game files included. Not affiliated with EA or Valve.",
    "note": null,
    "license": "GPL-3.0",
-   "stars": 575,
+   "stars": 576,
    "pushed_at": "2026-10-31",
    "archived": false,
    "provides": [
