@@ -54,7 +54,14 @@ def cmd_build(args):
     curated = scan.load_curated(os.path.join(root, "data", "projects.yml"))
     excluded = scan.load_excluded(os.path.join(root, "data", "excluded.yml"))
     records = scan.scan(curated, excluded, log=lambda m: print(m, file=sys.stderr))
-    _write(root, records, render.catalog_json(records))
+    new = render.catalog_json(records)
+    try:  # keep the old file (and its "generated" time) when nothing changed, so idle weeks make no commit
+        with open(os.path.join(root, "catalog.json")) as f:
+            if json.load(f)["projects"] == json.loads(new)["projects"]:
+                new = None
+    except (OSError, ValueError, KeyError):
+        pass
+    _write(root, records, new)
     return 0
 
 
