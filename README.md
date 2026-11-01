@@ -275,7 +275,7 @@ bin/fc-catalog build                           # rebuild everything (uses GITHUB
 python3 -m unittest discover tests             # tests, no network
 ```
 
-Part of [frame-commons](https://github.com/frame-commons). Not affiliated with Valve.
+Part of [frame-commons](https://github.com/frame-commons). Not affiliated with Valve. Made with help from Claude.
 
 **Licences:** the code is MIT ([LICENSE](LICENSE)). The manifest spec is CC0 ([spec/LICENSE](spec/LICENSE)).
 The catalog data (`catalog.json`, the tables, COMPAT.md) is CC0 too: copy it into anything.
