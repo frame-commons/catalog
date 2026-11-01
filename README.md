@@ -170,7 +170,7 @@ so its code is public but not open source until its author adds one.
 | [its-ven/FrameDepth](https://github.com/its-ven/FrameDepth) | Media in SteamVR with 3D depth |  | none found | 1 | 2026-10-11 |  |
 | [isaac-ranger/sleepframe](https://github.com/isaac-ranger/sleepframe) | Sleep sounds |  | MIT | 0 | 2026-10-05 |  |
 
-### Tooling (22)
+### Tooling (23)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
@@ -193,6 +193,7 @@ so its code is public but not open source until its author adds one.
 | [SteffanDonal/steam-frame-stuff](https://github.com/SteffanDonal/steam-frame-stuff) | Assorted scripts and notes |  | none found | 1 | 2026-10-16 |  |
 | [superpaiku/plusmenu-settings](https://github.com/superpaiku/plusmenu-settings) | Show or hide apps in the dashboard's + menu |  | MIT | 1 | 2026-10-26 |  |
 | [dhies23/steam-frame-fan-panel](https://github.com/dhies23/steam-frame-fan-panel) | Fan panel in the quick settings: temperature, RPM, manual or automatic |  | GPL-3.0 | 0 | 2026-10-10 |  |
+| [frame-commons/catalog](https://github.com/frame-commons/catalog) | Catalog of Steam Frame community software, the steam-frame.yml manifest spec, and a compatibility table | pc | other (see repo) | 0 | 2026-11-01 | yes |
 | [Inazumanotenshi/Framey-Plugins](https://github.com/Inazumanotenshi/Framey-Plugins) | Plugins for the Framey loader |  | none found | 0 | 2026-11-01 |  |
 | [JonahSimon/steam-frame-harness](https://github.com/JonahSimon/steam-frame-harness) | Drives the headset with nobody wearing it, for testing |  | MIT | 0 | 2026-10-31 |  |
 | [nihas101/steamos-scripts](https://github.com/nihas101/steamos-scripts) (archived) | Install scripts for tools on SteamOS |  | MIT | 0 | 2025-12-06 |  |
@@ -250,7 +251,7 @@ so its code is public but not open source until its author adds one.
 | [DeeJanuz/steam-frame-pd100-mount](https://github.com/DeeJanuz/steam-frame-pd100-mount) | Mount |  | MIT | 14 | 2026-10-09 |  |
 | [ravngr/3dscan-ArcturusCamera](https://github.com/ravngr/3dscan-ArcturusCamera) | 3D scan of the colour camera module |  | CC-BY-SA-4.0 | 0 | 2026-10-13 |  |
 
-107 projects, 0 with a `steam-frame.yml`.
+108 projects, 1 with a `steam-frame.yml`.
 <!-- catalog:end -->
 
 ## How it's built

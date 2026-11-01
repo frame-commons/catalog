@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T15:23:13Z",
+ "generated": "2026-11-01T15:24:56Z",
  "manifest_spec": 0,
  "license": "CC0-1.0",
  "vocabulary": [
@@ -835,6 +835,24 @@
    "install": null,
    "tested": [],
    "source": "curated"
+  },
+  {
+   "repo": "frame-commons/catalog",
+   "url": "https://github.com/frame-commons/catalog",
+   "description": "Catalog of Steam Frame community software, the steam-frame.yml manifest spec, and a compatibility table",
+   "note": null,
+   "license": "other",
+   "stars": 0,
+   "pushed_at": "2026-11-01",
+   "archived": false,
+   "provides": [
+    "tooling"
+   ],
+   "implements": [],
+   "runs_on": "pc",
+   "install": "pipx install git+https://github.com/frame-commons/catalog",
+   "tested": [],
+   "source": "manifest"
   },
   {
    "repo": "Frametop/frametop",
