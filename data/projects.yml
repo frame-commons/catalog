@@ -1,0 +1,139 @@
+# Curated entries: repos the catalog lists even without a steam-frame.yml, and the part(s)
+# each provides. A project's own steam-frame.yml always wins over its entry here.
+# note: our one-line summary (leave it out to use the repo's GitHub description).
+# Seeded 2026-11-01 from the links in kosantosbik/awesome-steam-frame, the steam-frame GitHub topic
+# and our own survey. Add a repo with a pull request.
+
+# Camera access
+- {repo: Frametop/frametop, provides: [desktop, input, eyes, hands, camera], runs_on: headset,
+   note: "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and experimental hand tracking"}
+- {repo: Curtis-VL/FrameEyeCameraFeed, provides: [camera, eyes], runs_on: headset, note: "Eye-camera feeds for EyeTrackVR"}
+- {repo: danthedaniel/roommate-radar, provides: [camera, passthrough], note: "Highlights people nearby using the tracking cameras and object detection"}
+- {repo: Sippbox/frame-passthrough-pip, provides: [camera, passthrough], note: "Passthrough camera as a picture-in-picture panel"}
+- {repo: MrDarkMoon/phone-screen, provides: [camera], note: "Tracks a real phone with the tracking cameras and shows it in VR"}
+
+# Hands
+- {repo: spyjacob/steam-frame-hand-tracking, provides: [hands], note: "Optical hand tracking for PC streaming"}
+- {repo: eyfeldb/frame-hands, provides: [hands, input], runs_on: headset, note: "Experimental hand tracking with SteamVR input"}
+- {repo: CreoleVR/QuestLHSync, provides: [input], note: "Aligns Lighthouse trackers and controllers to the Frame's tracking"}
+- {repo: Rulez777/FramePicoTracker, provides: [input], note: "Research on using PICO body trackers with the Frame"}
+
+# Eyes and face
+- {repo: konsti219/frameeyeosc, provides: [eyes], note: "Eye-tracking data over OSC"}
+- {repo: sasaken1102r/frameeyeosc, provides: [eyes, face], note: "frameeyeosc fork: gaze, eyelids, pupils over OSC, LiveLink and a VRCFT module"}
+- {repo: hakumaguro/vrcft-steam-frame, provides: [eyes, face], note: "VRCFaceTracking module with a tuning tool"}
+- {repo: miyu0-bit/frameeye-helper, provides: [eyes, tooling], note: "Installer for frameeyeosc"}
+- {repo: Project-Babble/Babble-Frame-Runtime, provides: [eyes, face], runs_on: headset, note: "Eye and mouth expressions on the headset, into VRCFaceTracking"}
+- {repo: huntergcook/SquintThru, provides: [eyes, passthrough], note: "Squint to toggle passthrough"}
+
+# Passthrough
+- {repo: KominoVR/frame-passthrough-shortcuts, provides: [passthrough, input], note: "Controller shortcuts for passthrough, including the colour camera module"}
+- {repo: bod09/frame-autopass, provides: [passthrough], note: "Switches between colour and IR passthrough automatically"}
+- {repo: VioletTides/KnockThru, provides: [passthrough], note: "Double-knock to toggle passthrough"}
+- {repo: spyjacob/steam-frame-chroma-key, provides: [passthrough, streaming], note: "Chroma-key mixed reality for PC streaming"}
+- {repo: thunderheronight/splat-workshop, provides: [passthrough, tooling], note: "Turns colour-camera recordings into Gaussian splats"}
+
+# Streaming
+- {repo: simplysanatori/moonlight-xr-steam-frame, provides: [streaming], runs_on: headset, note: "Native Moonlight game-streaming client"}
+- {repo: simplysanatori/moonlight-xr-lepton, provides: [streaming], note: "Moonlight XR via Lepton"}
+- {repo: WiVRn/WiVRn, provides: [streaming], runs_on: both, note: "OpenXR streaming from a Linux PC"}
+- {repo: xhuytox/scrcpy4Frame, provides: [streaming], note: "Android phone mirroring in VR"}
+- {repo: demonixis/oxrsys, provides: [streaming], runs_on: pc, note: "OpenXR runtime for macOS that can drive the Frame"}
+- {repo: arealjim/frame-stream, provides: [streaming], runs_on: both, note: "Streams macOS OpenXR apps to the Frame"}
+
+# Input and voice
+- {repo: baketnk/frame-yap, provides: [voice, input], runs_on: headset, note: "Voice typing on the headset"}
+- {repo: khvn26/steam-frame-dictation, provides: [voice, input], note: "Offline dictation"}
+- {repo: techieyann/frame-voice, provides: [voice, input], note: "Controller-triggered voice input"}
+- {repo: juanramosjr1/frame-voice, provides: [voice, input], note: "Voice input with copy and paste"}
+- {repo: groffta/whisper-frame, provides: [voice, input], note: "Push-to-talk Whisper dictation"}
+- {repo: sasaken1102r/frame-jp-keyboard, provides: [input], note: "Japanese flick keyboard"}
+- {repo: sasaken1102r/frame-aux-shortcuts, provides: [input], note: "Shortcuts on the auxiliary buttons"}
+- {repo: Andalu30/frame-unboundedMouse-vibed, provides: [input], note: "A mouse drives the laser pointer"}
+- {repo: MichaelScottsman/nso-frame-bridge, provides: [input], note: "Nintendo Switch Online GameCube controller over Bluetooth"}
+- {repo: uxandy/frame-input, provides: [input], note: "Shares keyboard and mouse with a Windows PC"}
+
+# Desktop and windows
+- {repo: tovakai/frametop, provides: [desktop], note: "Frametop fork with a plugin framework"}
+- {repo: wayvr-org/wayvr, provides: [desktop, overlay], runs_on: headset, note: "Wayland and X11 windows in VR"}
+- {repo: SteamFramelyHomebrew/framely, provides: [desktop], note: "Spatial launcher"}
+- {repo: goodpuppies/petplay, provides: [overlay], note: "Modular overlay and augmented-reality system"}
+
+# Overlays
+- {repo: sasaken1102r/frame-perf-overlay, provides: [overlay], runs_on: headset, note: "Frame rate, CPU and GPU load, temperatures, power and link overlay"}
+- {repo: sasaken1102r/frame-mic-tuner, provides: [overlay, voice], note: "Microphone echo and noise settings panel"}
+- {repo: beko-kerbecotton/framecolor, provides: [overlay], note: "Display colour adjustment"}
+- {repo: Emisune/frame-power-notifier, provides: [overlay], note: "Charging notification"}
+- {repo: Toastconcern/FrameStudio, provides: [overlay], note: "Custom environments"}
+
+# Tooling
+- {repo: saphid/frame-control, provides: [tooling], runs_on: pc, note: "Cross-platform headset manager over SSH: view, install, files"}
+- {repo: nailuj05/framemate, provides: [tooling], note: "Phone companion app"}
+- {repo: chaosfox26/framey, provides: [tooling], runs_on: headset, note: "Plugin loader"}
+- {repo: chaosfox26/framey-app, provides: [tooling], note: "Installer for Framey"}
+- {repo: chaosfox26/frame-fan, provides: [tooling], note: "Fan control"}
+- {repo: Cogential/frametanium, provides: [tooling], note: "App installer and updater that discovers Frame projects"}
+- {repo: travelerdev/frameloader, provides: [tooling], note: "Sideloads APKs and Linux apps"}
+- {repo: lhns/steam-frame-nix, provides: [tooling], runs_on: headset, note: "Nix Home Manager modules for the headset"}
+- {repo: AstronautCheetah/frame-tweaks, provides: [tooling], note: "Tweak installer"}
+- {repo: JonahSimon/steam-frame-harness, provides: [tooling], note: "Drives the headset with nobody wearing it, for testing"}
+- {repo: saphid/chromium-webxr-steam-frame, provides: [tooling, compat-fix], note: "Chromium build with immersive WebXR"}
+
+# Compatibility fixes
+- {repo: jareqpl/steam-frame-fixes, provides: [compat-fix], note: "Proton and Turnip fixes for games"}
+- {repo: daniel-lynch/ovrplugin-openxr-shim, provides: [compat-fix], note: "OVRPlugin ABI on top of OpenXR"}
+- {repo: Molier/openxr-dispatcher-open, provides: [compat-fix], note: "Open dispatcher for converted Quest APKs"}
+- {repo: AnotherMike-exe/SteamFrameDongleFix, provides: [compat-fix], runs_on: pc, note: "Fixes stutter with the rtw89 wireless dongle"}
+- {repo: Rangermike96/steam-frame-audio-fix, provides: [compat-fix], note: "USB and Bluetooth audio fix"}
+- {repo: spoopyghosty0/frameport, provides: [compat-fix, tooling], note: "Installs and patches games to run on the headset"}
+
+# Hardware
+- {repo: Nieko27/Frame-Workshop, provides: [hardware], note: "Open hardware designs"}
+- {repo: DeeJanuz/steam-frame-pd100-mount, provides: [hardware], note: "Mount"}
+
+# Games and ports
+- {repo: SpeedBreakerProject/speedbreaker, provides: [game]}
+- {repo: astromaddie/sfvr, provides: [game], note: "Shared helpers behind a set of VR ports"}
+- {repo: PodeCaradox/GalaxyFrame, provides: [game]}
+- {repo: Cesarus85/mjolnir-vr, provides: [game]}
+
+# Sorted from the steam-frame topic, 2026-11-01
+- {repo: astromaddie/banjo-vr, provides: [game]}
+- {repo: astromaddie/dk64-vr, provides: [game]}
+- {repo: astromaddie/fzerox-vr, provides: [game]}
+- {repo: astromaddie/fzerox-frame-source, provides: [game], note: "Source dependency of the F-Zero X port"}
+- {repo: astromaddie/libultraship-fzerox-frame, provides: [game], note: "Source dependency of the F-Zero X port"}
+- {repo: astromaddie/gen1recomp-frame, provides: [game]}
+- {repo: astromaddie/goldeneye-vr, provides: [game]}
+- {repo: astromaddie/gta3-vr, provides: [game], note: "GTA III VR port"}
+- {repo: astromaddie/gtasa-vr, provides: [game], note: "GTA San Andreas VR port"}
+- {repo: astromaddie/lambda1-vr, provides: [game]}
+- {repo: astromaddie/mariokart64-vr, provides: [game], note: "Mario Kart 64 VR port"}
+- {repo: astromaddie/oot-vr, provides: [game], note: "Ocarina of Time VR port"}
+- {repo: astromaddie/sm64-vr, provides: [game]}
+- {repo: astromaddie/time-crisis-vr, provides: [game], note: "Time Crisis VR port"}
+- {repo: astromaddie/vicecity-vr, provides: [game]}
+- {repo: astromaddie/wipeout-vr, provides: [game]}
+- {repo: aussie1579/hw2-frame-vr, provides: [game]}
+- {repo: bigbossafman/VR-Mod-Vibecoding-Wizard, provides: [game, tooling], note: "Claude skill that turns a flat PC game into a VR mod"}
+- {repo: ClassicWasTaken/HaloSteamFrameMod, provides: [game]}
+- {repo: dividebysandwich/stealth-mission-89, provides: [game]}
+- {repo: ElHombreAlex/FTL-Faster-Than-Light-VR, provides: [game]}
+- {repo: SpeedBreakerProject/speedbreaker-carbon, provides: [game]}
+- {repo: Cuteminded/JellyXR, provides: [media], note: "Jellyfin movies and shows in VR"}
+- {repo: its-ven/FrameDepth, provides: [media], note: "Media in SteamVR with 3D depth"}
+- {repo: phit/video2webxr, provides: [media], note: "360° and VR180 web video through WebXR (Chromium extension)"}
+- {repo: isaac-ranger/sleepframe, provides: [media], note: "Sleep sounds"}
+- {repo: josethevrtech/magicshelf-sonic-tiger, provides: [game]}
+- {repo: marcus-universe/frame-audio-mixer, provides: [voice, streaming], note: "Mixes the microphone for PC streaming and standalone apps"}
+- {repo: NoricForge/frame-sbs-toggle, provides: [media], note: "Side-by-side 3D toggle (mirror of a deleted repo, unmaintained)"}
+- {repo: DevctioN/FrameConnect, provides: [tooling], note: "Monitoring and file transfer"}
+- {repo: dhies23/steam-frame-fan-panel, provides: [tooling, overlay], note: "Fan panel in the quick settings: temperature, RPM, manual or automatic"}
+- {repo: HynoR/frameclash, provides: [tooling], note: "Clash Meta proxy and panel"}
+- {repo: Inazumanotenshi/Framey-Plugins, provides: [tooling], note: "Plugins for the Framey loader"}
+- {repo: nihas101/steamos-scripts, provides: [tooling], note: "Install scripts for tools on SteamOS"}
+- {repo: Puffy288/steamvr-home-frame, provides: [compat-fix], note: "Experimental SteamVR Home installer"}
+- {repo: superpaiku/plusmenu-settings, provides: [tooling], note: "Show or hide apps in the dashboard's + menu"}
+- {repo: SteffanDonal/steam-frame-stuff, provides: [tooling], note: "Assorted scripts and notes"}
+- {repo: ravngr/3dscan-ArcturusCamera, provides: [hardware], note: "3D scan of the colour camera module"}
+- {repo: sirrenderstudios/Lainframe, provides: [overlay], note: "A character companion in the Steam menu"}

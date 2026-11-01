@@ -1,0 +1,7 @@
+# Repos the catalog leaves out: their owners asked, or they aren't open-source Frame software.
+- {repo: kosantosbik/awesome-steam-frame, why: "a list, not software; linked from the README instead"}
+- {repo: gripspeak/gripspeak, why: "the app is closed source; the repo holds docs only"}
+- {repo: seanbetts/steam-hardware-watch, why: "watches launch news, not software for the headset"}
+- {repo: kebashioda/FrameBounce, why: "a Windows screensaver themed on the Frame"}
+- {repo: kekkodance/webos-steam-view, why: "a TV client, not Frame software"}
+- {repo: GainSec/RealHermes, why: "source-available under a non-commercial licence, not open source"}

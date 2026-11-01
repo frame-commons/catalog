@@ -1,0 +1,4 @@
+manifest: 0
+provides: [tooling]
+runs_on: pc
+install: "pipx install git+https://github.com/frame-commons/catalog"
