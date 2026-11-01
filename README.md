@@ -98,7 +98,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [WiVRn/WiVRn](https://github.com/WiVRn/WiVRn) | OpenXR streaming from a Linux PC | both | GPL-3.0 | 1831 | 2026-10-30 |  |
+| [WiVRn/WiVRn](https://github.com/WiVRn/WiVRn) | OpenXR streaming from a Linux PC | both | GPL-3.0 | 1832 | 2026-10-30 |  |
 | [demonixis/oxrsys](https://github.com/demonixis/oxrsys) | OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30) | pc | MPL-2.0 | 114 | 2026-11-01 |  |
 | [xhuytox/scrcpy4Frame](https://github.com/xhuytox/scrcpy4Frame) | Android phone mirroring in VR |  | MIT | 19 | 2026-10-24 |  |
 | [simplysanatori/moonlight-xr-steam-frame](https://github.com/simplysanatori/moonlight-xr-steam-frame) | Native Moonlight game-streaming client | headset | GPL-3.0 | 17 | 2026-11-01 |  |
@@ -106,14 +106,14 @@ so its code is public but not open source until its author adds one.
 | [simplysanatori/moonlight-xr-lepton](https://github.com/simplysanatori/moonlight-xr-lepton) | Moonlight XR via Lepton |  | GPL-3.0 | 5 | 2026-10-11 |  |
 | [marcus-universe/frame-audio-mixer](https://github.com/marcus-universe/frame-audio-mixer) | Mixes the microphone for PC streaming and standalone apps |  | MIT | 2 | 2026-10-18 |  |
 | [nickgkg/FrameCast](https://github.com/nickgkg/FrameCast) | Casts the headset view to a Chromecast, with sound | headset | MIT | 1 | 2026-10-06 |  |
-| [arealjim/frame-stream](https://github.com/arealjim/frame-stream) | Streams macOS OpenXR apps to the Frame | both | MIT | 0 | 2026-10-31 |  |
+| [arealjim/frame-stream](https://github.com/arealjim/frame-stream) | Streams macOS OpenXR apps to the Frame | both | MIT | 0 | 2026-11-01 |  |
 
 ### Input (15)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
 | [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
-| [CreoleVR/QuestLHSync](https://github.com/CreoleVR/QuestLHSync) | Aligns Lighthouse trackers and controllers to the Frame's tracking |  | MIT | 215 | 2026-10-18 |  |
+| [CreoleVR/QuestLHSync](https://github.com/CreoleVR/QuestLHSync) | Aligns Lighthouse trackers and controllers to the Frame's tracking |  | MIT | 215 | 2026-11-01 |  |
 | [KominoVR/frame-passthrough-shortcuts](https://github.com/KominoVR/frame-passthrough-shortcuts) | Controller shortcuts for passthrough, including the colour camera module |  | MIT | 27 | 2026-09-25 |  |
 | [baketnk/frame-yap](https://github.com/baketnk/frame-yap) | Voice typing on the headset | headset | MIT | 25 | 2026-11-01 |  |
 | [Rulez777/FramePicoTracker](https://github.com/Rulez777/FramePicoTracker) | Research on using PICO body trackers with the Frame |  | GPL-3.0 | 14 | 2026-10-15 |  |
@@ -144,7 +144,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-10-30 |  |
+| [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-11-01 |  |
 | [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [SteamFramelyHomebrew/framely](https://github.com/SteamFramelyHomebrew/framely) | Spatial launcher |  | AGPL-3.0 | 5 | 2026-10-30 |  |
 | [tovakai/frametop](https://github.com/tovakai/frametop) | Frametop fork with a plugin framework |  | MIT | 3 | 2026-11-01 |  |
@@ -153,7 +153,7 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-10-30 |  |
+| [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-11-01 |  |
 | [sasaken1102r/frame-perf-overlay](https://github.com/sasaken1102r/frame-perf-overlay) | Frame rate, CPU and GPU load, temperatures, power and link overlay | headset | MIT | 44 | 2026-10-31 |  |
 | [sasaken1102r/frame-mic-tuner](https://github.com/sasaken1102r/frame-mic-tuner) | Microphone echo and noise settings panel |  | MIT | 43 | 2026-10-31 |  |
 | [goodpuppies/petplay](https://github.com/goodpuppies/petplay) | Modular overlay and augmented-reality system |  | none found | 24 | 2026-10-19 |  |
@@ -178,12 +178,12 @@ so its code is public but not open source until its author adds one.
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [spoopyghosty0/frameport](https://github.com/spoopyghosty0/frameport) | Installs and patches games to run on the headset |  | GPL-3.0 | 228 | 2026-10-26 |  |
+| [spoopyghosty0/frameport](https://github.com/spoopyghosty0/frameport) | Installs and patches games to run on the headset |  | GPL-3.0 | 229 | 2026-10-26 |  |
 | [saphid/frame-control](https://github.com/saphid/frame-control) | Cross-platform headset manager over SSH: view, install, files | pc | MIT | 127 | 2026-11-01 |  |
 | [nailuj05/framemate](https://github.com/nailuj05/framemate) | Phone companion app |  | GPL-3.0 | 121 | 2026-10-22 |  |
 | [saphid/chromium-webxr-steam-frame](https://github.com/saphid/chromium-webxr-steam-frame) | Chromium build with immersive WebXR |  | BSD-3-Clause | 31 | 2026-10-26 |  |
 | [lhns/steam-frame-nix](https://github.com/lhns/steam-frame-nix) | Nix Home Manager modules for the headset | headset | Apache-2.0 | 18 | 2026-10-17 |  |
-| [bigbossafman/VR-Mod-Vibecoding-Wizard](https://github.com/bigbossafman/VR-Mod-Vibecoding-Wizard) | Claude skill that turns a flat PC game into a VR mod |  | MIT | 15 | 2026-09-06 |  |
+| [bigbossafman/VR-Mod-Vibecoding-Wizard](https://github.com/bigbossafman/VR-Mod-Vibecoding-Wizard) | Claude skill that turns a flat PC game into a VR mod |  | MIT | 16 | 2026-09-06 |  |
 | [travelerdev/frameloader](https://github.com/travelerdev/frameloader) | Sideloads APKs and Linux apps |  | MIT | 11 | 2026-10-28 |  |
 | [chaosfox26/framey](https://github.com/chaosfox26/framey) | Plugin loader | headset | GPL-2.0 | 9 | 2026-10-26 |  |
 | [thunderheronight/splat-workshop](https://github.com/thunderheronight/splat-workshop) | Turns colour-camera recordings into Gaussian splats |  | GPL-3.0 | 9 | 2026-10-28 |  |
@@ -201,14 +201,14 @@ so its code is public but not open source until its author adds one.
 | [dhies23/steam-frame-fan-panel](https://github.com/dhies23/steam-frame-fan-panel) | Fan panel in the quick settings: temperature, RPM, manual or automatic |  | GPL-3.0 | 0 | 2026-10-10 |  |
 | [frame-commons/catalog](https://github.com/frame-commons/catalog) | Catalog of Steam Frame community software, the steam-frame.yml manifest spec, and a compatibility table | pc | other (see repo) | 0 | 2026-11-01 | yes |
 | [Inazumanotenshi/Framey-Plugins](https://github.com/Inazumanotenshi/Framey-Plugins) | Plugins for the Framey loader |  | none found | 0 | 2026-11-01 |  |
-| [JonahSimon/steam-frame-harness](https://github.com/JonahSimon/steam-frame-harness) | Drives the headset with nobody wearing it, for testing |  | MIT | 0 | 2026-10-31 |  |
+| [JonahSimon/steam-frame-harness](https://github.com/JonahSimon/steam-frame-harness) | Drives the headset with nobody wearing it, for testing |  | MIT | 0 | 2026-11-01 |  |
 | [nihas101/steamos-scripts](https://github.com/nihas101/steamos-scripts) (archived) | Install scripts for tools on SteamOS |  | MIT | 0 | 2025-12-06 |  |
 
 ### Compatibility fixes (9)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
-| [spoopyghosty0/frameport](https://github.com/spoopyghosty0/frameport) | Installs and patches games to run on the headset |  | GPL-3.0 | 228 | 2026-10-26 |  |
+| [spoopyghosty0/frameport](https://github.com/spoopyghosty0/frameport) | Installs and patches games to run on the headset |  | GPL-3.0 | 229 | 2026-10-26 |  |
 | [saphid/chromium-webxr-steam-frame](https://github.com/saphid/chromium-webxr-steam-frame) | Chromium build with immersive WebXR |  | BSD-3-Clause | 31 | 2026-10-26 |  |
 | [Rangermike96/steam-frame-audio-fix](https://github.com/Rangermike96/steam-frame-audio-fix) | USB and Bluetooth audio fix |  | MIT | 6 | 2026-10-16 |  |
 | [Molier/openxr-dispatcher-open](https://github.com/Molier/openxr-dispatcher-open) | Open dispatcher for converted Quest APKs |  | other (see repo) | 5 | 2026-10-06 |  |
@@ -225,7 +225,7 @@ so its code is public but not open source until its author adds one.
 | [SpeedBreakerProject/speedbreaker](https://github.com/SpeedBreakerProject/speedbreaker) | Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam Deck, Steam Machine,… |  | GPL-3.0 | 576 | 2026-10-31 |  |
 | [SpeedBreakerProject/speedbreaker-carbon](https://github.com/SpeedBreakerProject/speedbreaker-carbon) | Unofficial static recompilation of the Xbox 360 version of Need for Speed: Carbon (2006): a native port for Steam Deck, Steam Machine, Stea… |  | GPL-3.0 | 30 | 2026-10-29 |  |
 | [Cesarus85/mjolnir-vr](https://github.com/Cesarus85/mjolnir-vr) | Ringfall: Mjolnir VR – an unofficial VR mod for Halo: Combat Evolved on Meta Quest 3/3S and Steam Frame. Bring your own disc image. |  | AGPL-3.0 | 20 | 2026-10-31 |  |
-| [bigbossafman/VR-Mod-Vibecoding-Wizard](https://github.com/bigbossafman/VR-Mod-Vibecoding-Wizard) | Claude skill that turns a flat PC game into a VR mod |  | MIT | 15 | 2026-09-06 |  |
+| [bigbossafman/VR-Mod-Vibecoding-Wizard](https://github.com/bigbossafman/VR-Mod-Vibecoding-Wizard) | Claude skill that turns a flat PC game into a VR mod |  | MIT | 16 | 2026-09-06 |  |
 | [PodeCaradox/GalaxyFrame](https://github.com/PodeCaradox/GalaxyFrame) | GalaxyFrame: Mario in VR on Steam Frame, a native port built on the Petari decompilation. Bring your own game files. 100% made by AI (Claud… |  | Unlicense | 9 | 2026-10-07 |  |
 | [ClassicWasTaken/HaloSteamFrameMod](https://github.com/ClassicWasTaken/HaloSteamFrameMod) | Community Halo CE VR mod installer for Steam Frame. No retail game executable, ISO, maps, keys, or soundtrack included. Supply your own aut… |  | other (see repo) | 8 | 2026-10-07 |  |
 | [dividebysandwich/stealth-mission-89](https://github.com/dividebysandwich/stealth-mission-89) | A spiritual successor to old DOS stealth fighter simulations, with dynamic realtime campaign, multiplayer and VR support |  | Apache-2.0 | 7 | 2026-11-01 |  |

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T17:55:05Z",
+ "generated": "2026-11-01T19:43:36Z",
  "manifest_spec": 0,
  "license": "CC0-1.0",
  "vocabulary": [
@@ -63,7 +63,7 @@
    "note": "Streams macOS OpenXR apps to the Frame",
    "license": "MIT",
    "stars": 0,
-   "pushed_at": "2026-10-31",
+   "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
     "streaming"
@@ -459,7 +459,7 @@
    "description": "Turn a flat PC game into a full VR mod: 6DoF, motion controls, physics hands, holsters, reloads, IK body, in-VR settings menu. A Claude skill that interviews you, plans the build, and tracks bugs.",
    "note": "Claude skill that turns a flat PC game into a VR mod",
    "license": "MIT",
-   "stars": 15,
+   "stars": 16,
    "pushed_at": "2026-09-06",
    "archived": false,
    "provides": [
@@ -605,7 +605,7 @@
    "note": "Aligns Lighthouse trackers and controllers to the Frame's tracking",
    "license": "MIT",
    "stars": 215,
-   "pushed_at": "2026-10-18",
+   "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
     "input"
@@ -1085,7 +1085,7 @@
    "note": "Drives the headset with nobody wearing it, for testing",
    "license": "MIT",
    "stars": 0,
-   "pushed_at": "2026-10-31",
+   "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
     "tooling"
@@ -1761,7 +1761,7 @@
    "description": "Port games to work with the Steam Frame",
    "note": "Installs and patches games to run on the headset",
    "license": "GPL-3.0",
-   "stars": 228,
+   "stars": 229,
    "pushed_at": "2026-10-26",
    "archived": false,
    "provides": [
@@ -2000,7 +2000,7 @@
    "note": "Wayland and X11 windows in VR",
    "license": "GPL-3.0",
    "stars": 1470,
-   "pushed_at": "2026-10-30",
+   "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
     "desktop",
@@ -2018,7 +2018,7 @@
    "description": "The Linux OpenXR streaming application to standalone headsets",
    "note": "OpenXR streaming from a Linux PC",
    "license": "GPL-3.0",
-   "stars": 1831,
+   "stars": 1832,
    "pushed_at": "2026-10-30",
    "archived": false,
    "provides": [
