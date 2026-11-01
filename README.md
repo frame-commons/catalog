@@ -94,7 +94,7 @@ so its code is public but not open source until its author adds one.
 | [Sippbox/frame-passthrough-pip](https://github.com/Sippbox/frame-passthrough-pip) | Passthrough camera as a picture-in-picture panel |  | MIT | 3 | 2026-10-22 |  |
 | [danthedaniel/roommate-radar](https://github.com/danthedaniel/roommate-radar) | Highlights people nearby using the tracking cameras and object detection |  | AGPL-3.0 | 0 | 2026-10-30 |  |
 
-### Streaming (8)
+### Streaming (9)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
@@ -105,6 +105,7 @@ so its code is public but not open source until its author adds one.
 | [spyjacob/steam-frame-chroma-key](https://github.com/spyjacob/steam-frame-chroma-key) | Chroma-key mixed reality for PC streaming |  | MIT | 8 | 2026-10-11 |  |
 | [simplysanatori/moonlight-xr-lepton](https://github.com/simplysanatori/moonlight-xr-lepton) | Moonlight XR via Lepton |  | GPL-3.0 | 5 | 2026-10-11 |  |
 | [marcus-universe/frame-audio-mixer](https://github.com/marcus-universe/frame-audio-mixer) | Mixes the microphone for PC streaming and standalone apps |  | MIT | 2 | 2026-10-18 |  |
+| [nickgkg/FrameCast](https://github.com/nickgkg/FrameCast) | Casts the headset view to a Chromecast, with sound | headset | MIT | 1 | 2026-10-06 |  |
 | [arealjim/frame-stream](https://github.com/arealjim/frame-stream) | Streams macOS OpenXR apps to the Frame | both | MIT | 0 | 2026-10-31 |  |
 
 ### Input (15)
@@ -146,7 +147,7 @@ so its code is public but not open source until its author adds one.
 | [wayvr-org/wayvr](https://github.com/wayvr-org/wayvr) | Wayland and X11 windows in VR | headset | GPL-3.0 | 1470 | 2026-10-30 |  |
 | [Frametop/frametop](https://github.com/Frametop/frametop) | Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand… | headset | MIT | 330 | 2026-10-29 |  |
 | [SteamFramelyHomebrew/framely](https://github.com/SteamFramelyHomebrew/framely) | Spatial launcher |  | AGPL-3.0 | 5 | 2026-10-30 |  |
-| [tovakai/frametop](https://github.com/tovakai/frametop) | Frametop fork with a plugin framework |  | MIT | 3 | 2026-10-26 |  |
+| [tovakai/frametop](https://github.com/tovakai/frametop) | Frametop fork with a plugin framework |  | MIT | 3 | 2026-11-01 |  |
 
 ### Overlays and HUDs (9)
 
@@ -162,7 +163,7 @@ so its code is public but not open source until its author adds one.
 | [Emisune/frame-power-notifier](https://github.com/Emisune/frame-power-notifier) | Charging notification |  | none found | 0 | 2026-10-22 |  |
 | [sirrenderstudios/Lainframe](https://github.com/sirrenderstudios/Lainframe) | A character companion in the Steam menu |  | other (see repo) | 0 | 2026-10-31 |  |
 
-### Media (5)
+### Media (6)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
@@ -170,9 +171,10 @@ so its code is public but not open source until its author adds one.
 | [Cuteminded/JellyXR](https://github.com/Cuteminded/JellyXR) | Jellyfin movies and shows in VR |  | Apache-2.0 | 5 | 2026-11-01 |  |
 | [NoricForge/frame-sbs-toggle](https://github.com/NoricForge/frame-sbs-toggle) | Side-by-side 3D toggle (mirror of a deleted repo, unmaintained) |  | none found | 2 | 2026-10-21 |  |
 | [its-ven/FrameDepth](https://github.com/its-ven/FrameDepth) | Media in SteamVR with 3D depth |  | none found | 1 | 2026-10-11 |  |
+| [nickgkg/FrameCast](https://github.com/nickgkg/FrameCast) | Casts the headset view to a Chromecast, with sound | headset | MIT | 1 | 2026-10-06 |  |
 | [isaac-ranger/sleepframe](https://github.com/isaac-ranger/sleepframe) | Sleep sounds |  | MIT | 0 | 2026-10-05 |  |
 
-### Tooling (23)
+### Tooling (25)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
@@ -185,11 +187,13 @@ so its code is public but not open source until its author adds one.
 | [travelerdev/frameloader](https://github.com/travelerdev/frameloader) | Sideloads APKs and Linux apps |  | MIT | 11 | 2026-10-28 |  |
 | [chaosfox26/framey](https://github.com/chaosfox26/framey) | Plugin loader | headset | GPL-2.0 | 9 | 2026-10-26 |  |
 | [thunderheronight/splat-workshop](https://github.com/thunderheronight/splat-workshop) | Turns colour-camera recordings into Gaussian splats |  | GPL-3.0 | 9 | 2026-10-28 |  |
+| [curiousjtuber/curiousj-framekit](https://github.com/curiousjtuber/curiousj-framekit) | Setup scripts: Tailscale, distrobox from Desktop Mode, mouse cursor | headset | other (see repo) | 6 | 2026-11-01 |  |
 | [miyu0-bit/frameeye-helper](https://github.com/miyu0-bit/frameeye-helper) | Installer for frameeyeosc |  | MIT | 6 | 2026-09-30 |  |
 | [Cogential/frametanium](https://github.com/Cogential/frametanium) | App installer and updater that discovers Frame projects |  | none found | 4 | 2026-10-22 |  |
 | [AstronautCheetah/frame-tweaks](https://github.com/AstronautCheetah/frame-tweaks) | Tweak installer |  | MIT | 3 | 2026-10-27 |  |
 | [chaosfox26/framey-app](https://github.com/chaosfox26/framey-app) | Installer for Framey |  | GPL-2.0 | 3 | 2026-10-26 |  |
 | [chaosfox26/frame-fan](https://github.com/chaosfox26/frame-fan) | Fan control |  | GPL-2.0 | 1 | 2026-10-26 |  |
+| [Crypto90/frameload](https://github.com/Crypto90/frameload) | Installs and ports Android VR games to the Frame |  | GPL-3.0 | 1 | 2026-10-29 |  |
 | [DevctioN/FrameConnect](https://github.com/DevctioN/FrameConnect) | Monitoring and file transfer |  | MIT | 1 | 2026-10-25 |  |
 | [HynoR/frameclash](https://github.com/HynoR/frameclash) | Clash Meta proxy and panel |  | other (see repo) | 1 | 2026-10-27 |  |
 | [SteffanDonal/steam-frame-stuff](https://github.com/SteffanDonal/steam-frame-stuff) | Assorted scripts and notes |  | none found | 1 | 2026-10-16 |  |
@@ -200,7 +204,7 @@ so its code is public but not open source until its author adds one.
 | [JonahSimon/steam-frame-harness](https://github.com/JonahSimon/steam-frame-harness) | Drives the headset with nobody wearing it, for testing |  | MIT | 0 | 2026-10-31 |  |
 | [nihas101/steamos-scripts](https://github.com/nihas101/steamos-scripts) (archived) | Install scripts for tools on SteamOS |  | MIT | 0 | 2025-12-06 |  |
 
-### Compatibility fixes (8)
+### Compatibility fixes (9)
 
 | Project | What it does | Runs on | Licence | Stars | Last push | Manifest |
 |---|---|---|---|---|---|---|
@@ -210,6 +214,7 @@ so its code is public but not open source until its author adds one.
 | [Molier/openxr-dispatcher-open](https://github.com/Molier/openxr-dispatcher-open) | Open dispatcher for converted Quest APKs |  | other (see repo) | 5 | 2026-10-06 |  |
 | [daniel-lynch/ovrplugin-openxr-shim](https://github.com/daniel-lynch/ovrplugin-openxr-shim) | OVRPlugin ABI on top of OpenXR |  | MIT | 4 | 2026-09-23 |  |
 | [jareqpl/steam-frame-fixes](https://github.com/jareqpl/steam-frame-fixes) | Proton and Turnip fixes for games |  | MIT | 4 | 2026-10-07 |  |
+| [Crypto90/frameload](https://github.com/Crypto90/frameload) | Installs and ports Android VR games to the Frame |  | GPL-3.0 | 1 | 2026-10-29 |  |
 | [AnotherMike-exe/SteamFrameDongleFix](https://github.com/AnotherMike-exe/SteamFrameDongleFix) | Fixes stutter with the rtw89 wireless dongle | pc | MIT | 0 | 2026-10-27 |  |
 | [Puffy288/steamvr-home-frame](https://github.com/Puffy288/steamvr-home-frame) | Experimental SteamVR Home installer |  | other (see repo) | 0 | 2026-10-25 |  |
 
@@ -253,7 +258,7 @@ so its code is public but not open source until its author adds one.
 | [DeeJanuz/steam-frame-pd100-mount](https://github.com/DeeJanuz/steam-frame-pd100-mount) | Mount |  | MIT | 14 | 2026-10-09 |  |
 | [ravngr/3dscan-ArcturusCamera](https://github.com/ravngr/3dscan-ArcturusCamera) | 3D scan of the colour camera module |  | CC-BY-SA-4.0 | 0 | 2026-10-13 |  |
 
-108 projects, 1 with a `steam-frame.yml`.
+111 projects, 1 with a `steam-frame.yml`.
 <!-- catalog:end -->
 
 ## How it's built

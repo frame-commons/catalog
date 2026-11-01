@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T17:26:34Z",
+ "generated": "2026-11-01T17:55:05Z",
  "manifest_spec": 0,
  "license": "CC0-1.0",
  "vocabulary": [
@@ -617,6 +617,43 @@
    "source": "curated"
   },
   {
+   "repo": "Crypto90/frameload",
+   "url": "https://github.com/Crypto90/frameload",
+   "description": "",
+   "note": "Installs and ports Android VR games to the Frame",
+   "license": "GPL-3.0",
+   "stars": 1,
+   "pushed_at": "2026-10-29",
+   "archived": false,
+   "provides": [
+    "compat-fix",
+    "tooling"
+   ],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "curated"
+  },
+  {
+   "repo": "curiousjtuber/curiousj-framekit",
+   "url": "https://github.com/curiousjtuber/curiousj-framekit",
+   "description": "Setup for the Steam Frame: Tailscale, distrobox from Desktop Mode, mouse cursor",
+   "note": "Setup scripts: Tailscale, distrobox from Desktop Mode, mouse cursor",
+   "license": "other",
+   "stars": 6,
+   "pushed_at": "2026-11-01",
+   "archived": false,
+   "provides": [
+    "tooling"
+   ],
+   "implements": [],
+   "runs_on": "headset",
+   "install": null,
+   "tested": [],
+   "source": "curated"
+  },
+  {
    "repo": "Curtis-VL/FrameEyeCameraFeed",
    "url": "https://github.com/Curtis-VL/FrameEyeCameraFeed",
    "description": "Yoinks the Frame eye camera feeds and hosts them in a format accepted by EyeTrackVR",
@@ -858,7 +895,7 @@
    "repo": "Frametop/frametop",
    "url": "https://github.com/Frametop/frametop",
    "description": "Multi-screen KDE Plasma desktop and universal 3D mouse for the Valve Steam Frame (SteamVR)",
-   "note": "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (deferred: built and runnable by hand, not in its installer)",
+   "note": "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (experimental channel; held back from stable for its CPU cost)",
    "license": "MIT",
    "stars": 330,
    "pushed_at": "2026-10-29",
@@ -1276,6 +1313,25 @@
    ],
    "implements": [],
    "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "curated"
+  },
+  {
+   "repo": "nickgkg/FrameCast",
+   "url": "https://github.com/nickgkg/FrameCast",
+   "description": "Cast the Steam Frame headset view straight to a Chromecast (low delay, with sound) - no phone or PC needed",
+   "note": "Casts the headset view to a Chromecast, with sound",
+   "license": "MIT",
+   "stars": 1,
+   "pushed_at": "2026-10-06",
+   "archived": false,
+   "provides": [
+    "streaming",
+    "media"
+   ],
+   "implements": [],
+   "runs_on": "headset",
    "install": null,
    "tested": [],
    "source": "curated"
@@ -1872,7 +1928,7 @@
    "note": "Frametop fork with a plugin framework",
    "license": "MIT",
    "stars": 3,
-   "pushed_at": "2026-10-26",
+   "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
     "desktop"
