@@ -6,6 +6,8 @@ not everything that exists: see "Getting listed" below.
 
 - **[catalog.json](catalog.json)** is the same list as data, for installers, launchers and
   other lists to read. Use it freely.
+- **[GUIDE.md](GUIDE.md)** is the field guide: for each part of the headset, the open tools worth
+  installing first, the alternatives and their limits.
 - **[COMPAT.md](COMPAT.md)** shows which projects were tested on which headset update.
 - **[spec/steam-frame-yml.md](spec/steam-frame-yml.md)** describes `steam-frame.yml`, a small
   optional file a project keeps in its own repo to describe itself.

@@ -39,6 +39,7 @@
 - {repo: WiVRn/WiVRn, provides: [streaming], runs_on: both, note: "OpenXR streaming from a Linux PC"}
 - {repo: xhuytox/scrcpy4Frame, provides: [streaming], note: "Android phone mirroring in VR"}
 - {repo: demonixis/oxrsys, provides: [streaming], runs_on: pc, note: "OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30)"}
+- {repo: nickgkg/FrameCast, provides: [streaming, media], runs_on: headset, note: "Casts the headset view to a Chromecast, with sound"}
 - {repo: arealjim/frame-stream, provides: [streaming], runs_on: both, note: "Streams macOS OpenXR apps to the Frame"}
 
 # Input and voice
@@ -137,3 +138,5 @@
 - {repo: SteffanDonal/steam-frame-stuff, provides: [tooling], note: "Assorted scripts and notes"}
 - {repo: ravngr/3dscan-ArcturusCamera, provides: [hardware], note: "3D scan of the colour camera module"}
 - {repo: sirrenderstudios/Lainframe, provides: [overlay], note: "A character companion in the Steam menu"}
+- {repo: Crypto90/frameload, provides: [compat-fix, tooling], note: "Installs and ports Android VR games to the Frame"}
+- {repo: curiousjtuber/curiousj-framekit, provides: [tooling], runs_on: headset, note: "Setup scripts: Tailscale, distrobox from Desktop Mode, mouse cursor"}

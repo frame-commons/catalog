@@ -354,8 +354,7 @@ following your head or worn on a controller like a watch.
   PCs, but its own status table lists the Frame as "waiting for device", so standalone use is
   untested.
 - **Casting the headset view to a TV:** [FrameCast](https://github.com/nickgkg/FrameCast) (MIT) casts
-  to a Chromecast using the headset's hardware encoder. Tested on one setup; not yet in the catalog
-  table.
+  to a Chromecast using the headset's hardware encoder. Tested on one setup.
 - **Phone mirroring:** [scrcpy4Frame](https://github.com/xhuytox/scrcpy4Frame) (MIT), a scrcpy wrapper.
 
 ## Getting games and apps to run
@@ -384,7 +383,7 @@ Windows apps, and adds them to your Steam library. Runs on Windows, macOS and Li
 - [Frameloader](https://github.com/travelerdev/frameloader) (MIT): drag-and-drop install of APKs,
   Windows apps and Linux ARM64 builds through Valve's devkit protocol. No telemetry, per its README.
 - [FrameLoad](https://github.com/Crypto90/frameload) (GPL-3.0): installs and ports Android VR games
-  from inside the headset, no PC; uses FramePort for porting. Not yet in the catalog table.
+  from inside the headset, no PC; uses FramePort for porting.
 - FrameDrop, whose install buttons appear in several READMEs, is a sideloader whose source is not
   published (per FramePort's comparison table), so it falls outside this guide. Those projects also
   offer plain downloads.
