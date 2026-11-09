@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T16:00:58Z",
+ "generated": "2026-11-09T16:27:48Z",
  "manifest_spec": 0,
  "license": "CC0-1.0",
  "vocabulary": [
@@ -45,7 +45,7 @@
    "note": "Fixes stutter with the rtw89 wireless dongle",
    "license": "MIT",
    "stars": 0,
-   "pushed_at": "2026-10-27",
+   "pushed_at": "2026-11-03",
    "archived": false,
    "provides": [
     "compat-fix"
@@ -62,8 +62,8 @@
    "description": "Mac OpenXR apps (Godot, Unity, Unreal, PC VR under Wine) streamed to the Steam Frame",
    "note": "Streams macOS OpenXR apps to the Frame",
    "license": "MIT",
-   "stars": 1,
-   "pushed_at": "2026-11-01",
+   "stars": 10,
+   "pushed_at": "2026-11-03",
    "archived": false,
    "provides": [
     "streaming"
@@ -387,16 +387,65 @@
    "note": "Tweak installer",
    "license": "MIT",
    "stars": 4,
-   "pushed_at": "2026-11-02",
+   "pushed_at": "2026-11-06",
    "archived": false,
    "provides": [
-    "tooling"
+    "tooling",
+    "input",
+    "voice",
+    "desktop",
+    "overlay",
+    "compat-fix",
+    "streaming",
+    "passthrough"
    ],
    "implements": [],
-   "runs_on": null,
-   "install": null,
-   "tested": [],
-   "source": "curated"
+   "runs_on": "headset",
+   "install": "curl -fsSL https://raw.githubusercontent.com/AstronautCheetah/frame-tweaks/main/get.sh | bash",
+   "tested": [
+    {
+     "steamos": "0.4.5",
+     "build": "20261006.6173745",
+     "steamvr": "2.18.2",
+     "date": "2026-10-07",
+     "result": "works",
+     "notes": "0.1.0 to 0.4.0"
+    },
+    {
+     "steamos": "0.4.5",
+     "build": "20261007.6125817",
+     "steamvr": "2.18.2",
+     "date": "2026-10-14",
+     "result": "works",
+     "notes": "0.5.0 to 0.6.23"
+    },
+    {
+     "steamos": "0.5.6",
+     "channel": "beta",
+     "date": "2026-10-16",
+     "result": "works",
+     "notes": "0.6.9 to 0.6.23 (build not recorded): 0.6.9 made Mouse cursor fix and Speech engine work on it"
+    },
+    {
+     "steamos": "0.5.6",
+     "build": "20261022.6153909",
+     "steamvr": "2.18.2",
+     "channel": "beta",
+     "date": "2026-11-02",
+     "result": "works",
+     "notes": "main after 0.6.23 (24ee830): Dictation, Performance Overlay, KnockThru, Arrow Pad"
+    },
+    {
+     "steamos": "0.5.6",
+     "build": "20261022.6153909",
+     "steamvr": "2.18.2",
+     "channel": "beta",
+     "date": "2026-11-03",
+     "result": "works",
+     "notes": "0.7.0: signed update from 0.6.23+, Dictation, Screen snip, Wallet, Memory limits, Scroll strips"
+    }
+   ],
+   "source": "manifest"
   },
   {
    "repo": "aussie1579/hw2-frame-vr",
@@ -422,8 +471,8 @@
    "description": "On-device voice typing for Steam Frame: hold a button, speak, review, type. Local speech recognition, no cloud.",
    "note": "Voice typing on the headset",
    "license": "MIT",
-   "stars": 25,
-   "pushed_at": "2026-11-01",
+   "stars": 27,
+   "pushed_at": "2026-11-03",
    "archived": false,
    "provides": [
     "voice",
@@ -441,7 +490,7 @@
    "description": "",
    "note": "Display colour adjustment",
    "license": "MIT",
-   "stars": 16,
+   "stars": 18,
    "pushed_at": "2026-09-29",
    "archived": false,
    "provides": [
@@ -459,7 +508,7 @@
    "description": "Turn a flat PC game into a full VR mod: 6DoF, motion controls, physics hands, holsters, reloads, IK body, in-VR settings menu. A Claude skill that interviews you, plans the build, and tracks bugs.",
    "note": "Claude skill that turns a flat PC game into a VR mod",
    "license": "MIT",
-   "stars": 17,
+   "stars": 22,
    "pushed_at": "2026-09-06",
    "archived": false,
    "provides": [
@@ -478,7 +527,7 @@
    "description": "Automatic colour/IR passthrough switching for the Steam Frame with the Arcturus Vision colour module",
    "note": "Switches between colour and IR passthrough automatically",
    "license": "MIT",
-   "stars": 23,
+   "stars": 25,
    "pushed_at": "2026-10-06",
    "archived": false,
    "provides": [
@@ -496,8 +545,8 @@
    "description": "Ringfall: Mjolnir VR – an unofficial VR mod for Halo: Combat Evolved on Meta Quest 3/3S and Steam Frame. Bring your own disc image.",
    "note": null,
    "license": "AGPL-3.0",
-   "stars": 21,
-   "pushed_at": "2026-10-31",
+   "stars": 22,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "game"
@@ -532,7 +581,7 @@
    "description": "Framey: a lightweight plugin loader for the Steam Frame. Install it with the Framey App. AI-made by ChaosFox, inspired by Decky Loader. Unofficial.",
    "note": "Plugin loader",
    "license": "GPL-2.0",
-   "stars": 10,
+   "stars": 12,
    "pushed_at": "2026-10-26",
    "archived": false,
    "provides": [
@@ -550,7 +599,7 @@
    "description": "Framey App: native Windows, Linux and macOS installer that sets up Framey and Fan Control on a Steam Frame over SSH. AI-made, unofficial.",
    "note": "Installer for Framey",
    "license": "GPL-2.0",
-   "stars": 4,
+   "stars": 5,
    "pushed_at": "2026-10-26",
    "archived": false,
    "provides": [
@@ -586,7 +635,7 @@
    "description": "Installs and updates Steam Frame apps and ports from GitHub releases, like Obtainium",
    "note": "App installer and updater that discovers Frame projects",
    "license": null,
-   "stars": 4,
+   "stars": 8,
    "pushed_at": "2026-10-22",
    "archived": false,
    "provides": [
@@ -604,7 +653,7 @@
    "description": "Lighthouse trackers and controllers aligned to a rooted Quest's or Steam Frame's own tracking, from its cameras seeing SteamVR base stations",
    "note": "Aligns Lighthouse trackers and controllers to the Frame's tracking",
    "license": "MIT",
-   "stars": 215,
+   "stars": 236,
    "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
@@ -642,7 +691,7 @@
    "note": "Setup scripts: Tailscale, distrobox from Desktop Mode, mouse cursor",
    "license": "other",
    "stars": 6,
-   "pushed_at": "2026-11-02",
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "tooling"
@@ -678,8 +727,8 @@
    "description": "Watch your Jellyfin movies and shows on  Steam Frame & Quest",
    "note": "Jellyfin movies and shows in VR",
    "license": "Apache-2.0",
-   "stars": 6,
-   "pushed_at": "2026-11-02",
+   "stars": 10,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "media"
@@ -696,7 +745,7 @@
    "description": "An independent OpenXR reimplementation of Meta's OVRPlugin ABI, so VrApi-era Quest VR titles can run on non-Meta OpenXR runtimes (Monado, Steam Frame). Interoperability — original code only.",
    "note": "OVRPlugin ABI on top of OpenXR",
    "license": "MIT",
-   "stars": 4,
+   "stars": 5,
    "pushed_at": "2026-09-23",
    "archived": false,
    "provides": [
@@ -714,8 +763,8 @@
    "description": "Highlight cohabitators in the Steam Frame so you don't accidentally hit them",
    "note": "Highlights people nearby using the tracking cameras and object detection",
    "license": "AGPL-3.0",
-   "stars": 0,
-   "pushed_at": "2026-10-30",
+   "stars": 1,
+   "pushed_at": "2026-11-07",
    "archived": false,
    "provides": [
     "camera",
@@ -733,7 +782,7 @@
    "description": "3D-printable mounts that carry a BoboVR PD100 battery above or below the Valve Steam Frame's rear battery pod",
    "note": "Mount",
    "license": "MIT",
-   "stars": 15,
+   "stars": 16,
    "pushed_at": "2026-10-09",
    "archived": false,
    "provides": [
@@ -751,8 +800,8 @@
    "description": "OXRSys is an OpenXR runtime for MacOS, unlocking native PCVR on MacOS with various VR headsets, including Meta Quest and Apple Vision Pro",
    "note": "OpenXR runtime for macOS; its Steam Frame client is an open draft PR (#30)",
    "license": "MPL-2.0",
-   "stars": 114,
-   "pushed_at": "2026-11-02",
+   "stars": 120,
+   "pushed_at": "2026-11-04",
    "archived": false,
    "provides": [
     "streaming"
@@ -801,13 +850,29 @@
    "source": "curated"
   },
   {
+   "repo": "dividebysandwich/neon-lasertag",
+   "url": "https://github.com/dividebysandwich/neon-lasertag",
+   "description": "A fun and fast laser tag experience in 2D and VR",
+   "note": null,
+   "license": null,
+   "stars": 0,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "dividebysandwich/stealth-mission-89",
    "url": "https://github.com/dividebysandwich/stealth-mission-89",
    "description": "A spiritual successor to old DOS stealth fighter simulations, with dynamic realtime campaign, multiplayer and VR support",
    "note": null,
-   "license": "Apache-2.0",
-   "stars": 7,
-   "pushed_at": "2026-11-02",
+   "license": "GPL-3.0",
+   "stars": 8,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "game"
@@ -817,6 +882,22 @@
    "install": null,
    "tested": [],
    "source": "curated"
+  },
+  {
+   "repo": "Echazu/time-crisis-vr",
+   "url": "https://github.com/Echazu/time-crisis-vr",
+   "description": "Play Time Crisis in VR on Meta Quest and PCVR with tracked pistol aiming, stereo rendering, original arcade gameplay, and physical ducking or grip cover.",
+   "note": null,
+   "license": null,
+   "stars": 0,
+   "pushed_at": "2026-11-06",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
   },
   {
    "repo": "ElHombreAlex/FTL-Faster-Than-Light-VR",
@@ -855,32 +936,13 @@
    "source": "curated"
   },
   {
-   "repo": "eyfeldb/frame-hands",
-   "url": "https://github.com/eyfeldb/frame-hands",
-   "description": "Experimental hand tracking for Steam Frame, with SteamVR input and a dashboard toggle.",
-   "note": "Experimental hand tracking with SteamVR input",
-   "license": "MIT",
-   "stars": 0,
-   "pushed_at": "2026-10-15",
-   "archived": false,
-   "provides": [
-    "hands",
-    "input"
-   ],
-   "implements": [],
-   "runs_on": "headset",
-   "install": null,
-   "tested": [],
-   "source": "curated"
-  },
-  {
    "repo": "frame-commons/catalog",
    "url": "https://github.com/frame-commons/catalog",
    "description": "Catalog of Steam Frame community software, the steam-frame.yml manifest spec, and a compatibility table",
    "note": null,
    "license": "other",
-   "stars": 0,
-   "pushed_at": "2026-11-01",
+   "stars": 2,
+   "pushed_at": "2026-11-02",
    "archived": false,
    "provides": [
     "tooling"
@@ -897,8 +959,8 @@
    "description": "Multi-screen KDE Plasma desktop and universal 3D mouse for the Valve Steam Frame (SteamVR)",
    "note": "Multi-screen KDE Plasma desktop, 3D mouse and gaze input; ships ft-camd (tracking-camera frames into a shared-memory ring) and camera hand tracking (experimental channel; held back from stable for its CPU cost)",
    "license": "MIT",
-   "stars": 334,
-   "pushed_at": "2026-11-02",
+   "stars": 363,
+   "pushed_at": "2026-11-07",
    "archived": false,
    "provides": [
     "desktop",
@@ -920,7 +982,7 @@
    "note": "Modular overlay and augmented-reality system",
    "license": null,
    "stars": 24,
-   "pushed_at": "2026-10-19",
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "overlay"
@@ -932,12 +994,28 @@
    "source": "curated"
   },
   {
+   "repo": "GREYBE4RD/vrperf",
+   "url": "https://github.com/GREYBE4RD/vrperf",
+   "description": "A lightweight, native Linux performance overlay for SteamVR, written in Rust. It displays PCVR frame timings and system statistics inside the headset while streaming SteamVR games, including to the Steam Frame.",
+   "note": null,
+   "license": "GPL-3.0",
+   "stars": 0,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "groffta/whisper-frame",
    "url": "https://github.com/groffta/whisper-frame",
    "description": "On-device push-to-talk voice typing for the Steam Frame.",
    "note": "Push-to-talk Whisper dictation",
    "license": "MIT",
-   "stars": 1,
+   "stars": 2,
    "pushed_at": "2026-10-07",
    "archived": false,
    "provides": [
@@ -951,13 +1029,29 @@
    "source": "curated"
   },
   {
+   "repo": "guix8/framedepth",
+   "url": "https://github.com/guix8/framedepth",
+   "description": "Real-time 2D-to-3D for video and images in Chrome on the Steam Frame (unofficial)",
+   "note": null,
+   "license": "GPL-3.0",
+   "stars": 18,
+   "pushed_at": "2026-11-05",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "hakumaguro/vrcft-steam-frame",
    "url": "https://github.com/hakumaguro/vrcft-steam-frame",
    "description": "Eye tracking for Steam Frame in VRChat: VRCFaceTracking module, guided tuning tool and headset setup scripts (unofficial)",
    "note": "VRCFaceTracking module with a tuning tool",
    "license": "MIT",
-   "stars": 11,
-   "pushed_at": "2026-10-09",
+   "stars": 12,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "eyes",
@@ -989,13 +1083,29 @@
    "source": "curated"
   },
   {
+   "repo": "HynoR/frame-vrc",
+   "url": "https://github.com/HynoR/frame-vrc",
+   "description": "Running PC Version VRchat On Steam Frame",
+   "note": null,
+   "license": "Apache-2.0",
+   "stars": 1,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "HynoR/frameclash",
    "url": "https://github.com/HynoR/frameclash",
    "description": "ClashMeta Proxy & Panel for Steam Frame VR headset",
    "note": "Clash Meta proxy and panel",
    "license": "other",
    "stars": 1,
-   "pushed_at": "2026-10-27",
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "tooling"
@@ -1030,7 +1140,7 @@
    "description": "A sleep-sound program for the Steam Frame.",
    "note": "Sleep sounds",
    "license": "MIT",
-   "stars": 0,
+   "stars": 1,
    "pushed_at": "2026-10-05",
    "archived": false,
    "provides": [
@@ -1066,7 +1176,7 @@
    "description": "Unofficial Proton and Turnip (Mesa) fixes for Steam Frame that let some games run that don't work out of the box.",
    "note": "Proton and Turnip fixes for games",
    "license": "MIT",
-   "stars": 4,
+   "stars": 5,
    "pushed_at": "2026-10-07",
    "archived": false,
    "provides": [
@@ -1085,7 +1195,7 @@
    "note": "Drives the headset with nobody wearing it, for testing",
    "license": "MIT",
    "stars": 0,
-   "pushed_at": "2026-11-02",
+   "pushed_at": "2026-11-03",
    "archived": false,
    "provides": [
     "tooling"
@@ -1139,7 +1249,7 @@
    "description": "Offline dictation on the Steam Frame.",
    "note": "Offline dictation",
    "license": "MIT",
-   "stars": 15,
+   "stars": 21,
    "pushed_at": "2026-10-28",
    "archived": false,
    "provides": [
@@ -1155,11 +1265,11 @@
   {
    "repo": "KominoVR/frame-passthrough-shortcuts",
    "url": "https://github.com/KominoVR/frame-passthrough-shortcuts",
-   "description": "Controller shortcuts for Steam Frame passthrough and the Arcturus RGB camera",
+   "description": "Controller shortcuts for translucent and opaque passthrough on Steam Frame.",
    "note": "Controller shortcuts for passthrough, including the colour camera module",
    "license": "MIT",
-   "stars": 27,
-   "pushed_at": "2026-09-25",
+   "stars": 28,
+   "pushed_at": "2026-11-04",
    "archived": false,
    "provides": [
     "passthrough",
@@ -1177,7 +1287,7 @@
    "description": "Transmitting Steam Frame Eye Trackign Data via OSC",
    "note": "Eye-tracking data over OSC",
    "license": "MIT",
-   "stars": 73,
+   "stars": 75,
    "pushed_at": "2026-10-02",
    "archived": false,
    "provides": [
@@ -1195,7 +1305,7 @@
    "description": "Home Manager modules with fixes and tweaks for the Valve Steam Frame (SteamOS)",
    "note": "Nix Home Manager modules for the headset",
    "license": "Apache-2.0",
-   "stars": 19,
+   "stars": 20,
    "pushed_at": "2026-10-17",
    "archived": false,
    "provides": [
@@ -1208,13 +1318,29 @@
    "source": "curated"
   },
   {
+   "repo": "Malorn44/steam-frame-polykey",
+   "url": "https://github.com/Malorn44/steam-frame-polykey",
+   "description": "On-screen keyboard for Valve Steam Frame: layouts, multi-language input, prediction, swipe-typing, and offline dictation",
+   "note": null,
+   "license": "MIT",
+   "stars": 1,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "marcus-universe/frame-audio-mixer",
    "url": "https://github.com/marcus-universe/frame-audio-mixer",
    "description": "Mix Steam Frame audio of the microphone for the PC wireless stream and standalone applications..",
    "note": "Mixes the microphone for PC streaming and standalone apps",
    "license": "MIT",
    "stars": 2,
-   "pushed_at": "2026-10-18",
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "voice",
@@ -1264,6 +1390,22 @@
    "source": "curated"
   },
   {
+   "repo": "mog422/index-frame-relay",
+   "url": "https://github.com/mog422/index-frame-relay",
+   "description": "Relay Valve Index controllers to Steam Frame's native SteamVR environment, enabling full headset UI interaction and guardian.",
+   "note": null,
+   "license": "MIT",
+   "stars": 2,
+   "pushed_at": "2026-11-05",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "Molier/openxr-dispatcher-open",
    "url": "https://github.com/Molier/openxr-dispatcher-open",
    "description": "Open-source drop-in replacement for OVRPort's closed OpenXR dispatcher (libopenxr_loader.so) in converted Quest apps; tested on the Steam Frame",
@@ -1287,7 +1429,7 @@
    "description": "Your real Android phone inside VR on the Steam Frame: tracked by the headset cameras, its motion sensors and selfie camera, with its screen, touches and sound in VR. Self-learning.",
    "note": "Tracks a real phone with the tracking cameras and shows it in VR",
    "license": "MIT",
-   "stars": 0,
+   "stars": 1,
    "pushed_at": "2026-10-28",
    "archived": false,
    "provides": [
@@ -1305,7 +1447,7 @@
    "description": "Steam Frame Companion App",
    "note": "Phone companion app",
    "license": "GPL-3.0",
-   "stars": 128,
+   "stars": 140,
    "pushed_at": "2026-10-22",
    "archived": false,
    "provides": [
@@ -1324,7 +1466,7 @@
    "note": "Casts the headset view to a Chromecast, with sound",
    "license": "MIT",
    "stars": 1,
-   "pushed_at": "2026-10-06",
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "streaming",
@@ -1342,7 +1484,7 @@
    "description": "A repo for all things steam frame hardware.",
    "note": "Open hardware designs",
    "license": "CERN-OHL-S-2.0",
-   "stars": 89,
+   "stars": 94,
    "pushed_at": "2026-10-18",
    "archived": false,
    "provides": [
@@ -1378,7 +1520,7 @@
    "description": "Unmaintained Mirror / Re-Upload of the deleted michaelscottsman/frame-sbs-toggle repository for SteamVR/Steam Frame. No support provided.",
    "note": "Side-by-side 3D toggle (mirror of a deleted repo, unmaintained)",
    "license": null,
-   "stars": 2,
+   "stars": 3,
    "pushed_at": "2026-10-21",
    "archived": false,
    "provides": [
@@ -1396,8 +1538,8 @@
    "description": "Watch YouTube 360°/VR180 videos and videos on other sites in your PC VR headset via WebXR (Chromium extension)",
    "note": "360° and VR180 web video through WebXR (Chromium extension)",
    "license": "ISC",
-   "stars": 8,
-   "pushed_at": "2026-10-29",
+   "stars": 11,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "media"
@@ -1432,7 +1574,7 @@
    "description": "Steam Frame Babble Runtime",
    "note": "Eye and mouth expressions on the headset, into VRCFaceTracking",
    "license": "GPL-3.0",
-   "stars": 44,
+   "stars": 53,
    "pushed_at": "2026-10-31",
    "archived": false,
    "provides": [
@@ -1451,7 +1593,7 @@
    "description": "Unofficial, experimental installer for SteamVR Home on Steam Frame. *Created with AI assistance*",
    "note": "Experimental SteamVR Home installer",
    "license": "other",
-   "stars": 0,
+   "stars": 1,
    "pushed_at": "2026-10-25",
    "archived": false,
    "provides": [
@@ -1518,12 +1660,28 @@
    "source": "curated"
   },
   {
+   "repo": "RxVreality/UTMTFTM",
+   "url": "https://github.com/RxVreality/UTMTFTM",
+   "description": "Easy offset for SteamVR hands: grab your in-game hand and put it where it belongs, live.",
+   "note": null,
+   "license": "MIT",
+   "stars": 7,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "saphid/chromium-webxr-steam-frame",
    "url": "https://github.com/saphid/chromium-webxr-steam-frame",
    "description": "Chromium with immersive WebXR on the Steam Frame: build script, SteamVR fix, and a Steam library installer",
    "note": "Chromium build with immersive WebXR",
    "license": "BSD-3-Clause",
-   "stars": 31,
+   "stars": 36,
    "pushed_at": "2026-11-02",
    "archived": false,
    "provides": [
@@ -1542,8 +1700,8 @@
    "description": "Frame Control: a free, open-source app for Valve Steam Frame on macOS, Windows, Linux and iPhone. View the headset, install games and apps, transfer files, and manage your Frame.",
    "note": "Cross-platform headset manager over SSH: view, install, files",
    "license": "MIT",
-   "stars": 130,
-   "pushed_at": "2026-11-02",
+   "stars": 145,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "tooling"
@@ -1579,7 +1737,7 @@
    "note": "Japanese flick keyboard",
    "license": "MIT",
    "stars": 7,
-   "pushed_at": "2026-10-17",
+   "pushed_at": "2026-11-03",
    "archived": false,
    "provides": [
     "input"
@@ -1596,7 +1754,7 @@
    "description": "SteamVR dashboard panel to switch the Steam Frame mic's echo cancellation and noise suppression (unofficial)",
    "note": "Microphone echo and noise settings panel",
    "license": "MIT",
-   "stars": 45,
+   "stars": 50,
    "pushed_at": "2026-10-31",
    "archived": false,
    "provides": [
@@ -1615,7 +1773,7 @@
    "description": "Performance overlay for Steam Frame: fps, CPU/GPU, temperatures, power, battery and Steam Link link in SteamVR (unofficial) / Steam Frame 用のパフォーマンス表示オーバーレイ（非公式）",
    "note": "Frame rate, CPU and GPU load, temperatures, power and link overlay",
    "license": "MIT",
-   "stars": 45,
+   "stars": 49,
    "pushed_at": "2026-10-31",
    "archived": false,
    "provides": [
@@ -1633,8 +1791,8 @@
    "description": "Steam Frame eye tracking for VRChat: gaze, eyelids with widen and squint, pupils from the eye cameras, and optional brows. Sends over OSC, LiveLink or its own VRCFaceTracking module. Fork of konsti219/frameeyeosc.",
    "note": "frameeyeosc fork: gaze, eyelids, pupils over OSC, LiveLink and a VRCFT module",
    "license": "MIT",
-   "stars": 118,
-   "pushed_at": "2026-11-02",
+   "stars": 134,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "eyes",
@@ -1647,13 +1805,45 @@
    "source": "curated"
   },
   {
+   "repo": "seaweeduk/VideoFrameVR",
+   "url": "https://github.com/seaweeduk/VideoFrameVR",
+   "description": "VR video player for the Steam Frame and Linux SteamVR: smooth 8K HEVC playback, eye-tracked foveated rendering at 120 Hz, passthrough videos, stereo focus for 3D video, and Stash integration.",
+   "note": null,
+   "license": "GPL-3.0",
+   "stars": 18,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
+   "repo": "sframelab/frame-hands",
+   "url": "https://github.com/sframelab/frame-hands",
+   "description": "Experimental hand tracking for Steam Frame, with SteamVR input and a dashboard toggle.",
+   "note": null,
+   "license": "MIT",
+   "stars": 0,
+   "pushed_at": "2026-10-15",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "simplysanatori/moonlight-xr-lepton",
    "url": "https://github.com/simplysanatori/moonlight-xr-lepton",
    "description": "Moonlight XR running on the Steam Frame through Lepton: 3D game streaming from Sunshine/Apollo. See STEAM_FRAME.md",
    "note": "Moonlight XR via Lepton",
    "license": "GPL-3.0",
-   "stars": 5,
-   "pushed_at": "2026-10-11",
+   "stars": 8,
+   "pushed_at": "2026-11-06",
    "archived": false,
    "provides": [
     "streaming"
@@ -1667,11 +1857,11 @@
   {
    "repo": "simplysanatori/moonlight-xr-steam-frame",
    "url": "https://github.com/simplysanatori/moonlight-xr-steam-frame",
-   "description": "Moonlight XR for Frame: native game streaming client for the Valve Steam Frame (OpenXR, Vulkan, hardware decode, 3D, rooms)",
+   "description": "Moonlight XR for Frame: native game streaming client for the Steam Frame (OpenXR, Vulkan, hardware decode, 3D, rooms)",
    "note": "Native Moonlight game-streaming client",
    "license": "GPL-3.0",
-   "stars": 17,
-   "pushed_at": "2026-11-01",
+   "stars": 19,
+   "pushed_at": "2026-11-06",
    "archived": false,
    "provides": [
     "streaming"
@@ -1725,8 +1915,8 @@
    "description": "Unofficial static recompilation of the Xbox 360 version of Need for Speed: Most Wanted (2005): a native port for Steam Deck, Steam Machine, Steam Frame, Linux and Mac (iPhone/iPad: sideload the experimental IPA or build it yourself). Bring your own disc: no game files included. Not affiliated with EA or Valve.",
    "note": null,
    "license": "GPL-3.0",
-   "stars": 582,
-   "pushed_at": "2026-11-02",
+   "stars": 662,
+   "pushed_at": "2026-11-07",
    "archived": false,
    "provides": [
     "game"
@@ -1743,8 +1933,8 @@
    "description": "Unofficial static recompilation of the Xbox 360 version of Need for Speed: Carbon (2006): a native port for Steam Deck, Steam Machine, Steam Frame, Linux and Mac, plus a Windows beta (iPhone/iPad: sideload the experimental IPA or build it yourself). Bring your own disc: no game files included. Not affiliated with EA or Valve.",
    "note": null,
    "license": "GPL-3.0",
-   "stars": 37,
-   "pushed_at": "2026-11-01",
+   "stars": 55,
+   "pushed_at": "2026-11-05",
    "archived": false,
    "provides": [
     "game"
@@ -1761,8 +1951,8 @@
    "description": "Port games to work with the Steam Frame",
    "note": "Installs and patches games to run on the headset",
    "license": "GPL-3.0",
-   "stars": 235,
-   "pushed_at": "2026-10-26",
+   "stars": 253,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "compat-fix",
@@ -1780,7 +1970,7 @@
    "description": "Chroma-key mixed reality passthrough for Steam Frame PC streaming: key a solid-colour background to the headset's passthrough camera, with an in-headset control panel.",
    "note": "Chroma-key mixed reality for PC streaming",
    "license": "MIT",
-   "stars": 8,
+   "stars": 10,
    "pushed_at": "2026-10-11",
    "archived": false,
    "provides": [
@@ -1799,7 +1989,7 @@
    "description": "Optical hand tracking for Steam Frame PC streaming: the headset's passthrough cameras track your hands, set a controller down and that hand takes over in any SteamVR game. Per-hand in-headset control panel.",
    "note": "Optical hand tracking for PC streaming",
    "license": "MIT",
-   "stars": 8,
+   "stars": 10,
    "pushed_at": "2026-10-17",
    "archived": false,
    "provides": [
@@ -1828,6 +2018,22 @@
    "install": null,
    "tested": [],
    "source": "curated"
+  },
+  {
+   "repo": "SteffanDonal/SRanipatch",
+   "url": "https://github.com/SteffanDonal/SRanipatch",
+   "description": "Unofficial SRanipal runtime for the VIVE Facial Tracker & VRCFT on Windows and Steam Frame",
+   "note": null,
+   "license": null,
+   "stars": 2,
+   "pushed_at": "2026-11-09",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
   },
   {
    "repo": "SteffanDonal/steam-frame-stuff",
@@ -1890,7 +2096,7 @@
    "description": "GUI for the Arcturus Vision splat pipeline: pick, check and convert Steam Frame camera recordings and send them to the Gaussian XR gallery",
    "note": "Turns colour-camera recordings into Gaussian splats",
    "license": "GPL-3.0",
-   "stars": 9,
+   "stars": 11,
    "pushed_at": "2026-10-28",
    "archived": false,
    "provides": [
@@ -1909,7 +2115,7 @@
    "description": "Custom environment creator and render for the Steam Frame (SteamOS ARM64)",
    "note": "Custom environments",
    "license": "AGPL-3.0",
-   "stars": 20,
+   "stars": 23,
    "pushed_at": "2026-11-02",
    "archived": false,
    "provides": [
@@ -1927,7 +2133,7 @@
    "description": "A fork of Frametop that provides a plugin framework",
    "note": "Frametop fork with a plugin framework",
    "license": "MIT",
-   "stars": 3,
+   "stars": 5,
    "pushed_at": "2026-11-01",
    "archived": false,
    "provides": [
@@ -1945,8 +2151,8 @@
    "description": "Frameloader is a drag-and-drop implementation of the Valve APK and Linux sideloader written in Electron for multi-platform support.",
    "note": "Sideloads APKs and Linux apps",
    "license": "MIT",
-   "stars": 11,
-   "pushed_at": "2026-10-28",
+   "stars": 16,
+   "pushed_at": "2026-11-09",
    "archived": false,
    "provides": [
     "tooling"
@@ -1956,6 +2162,38 @@
    "install": null,
    "tested": [],
    "source": "curated"
+  },
+  {
+   "repo": "turboncelucionce/steam-frame-drawing-tablet",
+   "url": "https://github.com/turboncelucionce/steam-frame-drawing-tablet",
+   "description": "Pen tablet driver for Steam Frame's native desktop",
+   "note": null,
+   "license": "GPL-2.0",
+   "stars": 0,
+   "pushed_at": "2026-11-08",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
+   "repo": "TylerK26/framewall",
+   "url": "https://github.com/TylerK26/framewall",
+   "description": "An app to stream your main monitor, plus multiple virtual monitors to the steam frame with sunshine and moonlight",
+   "note": null,
+   "license": "GPL-3.0",
+   "stars": 0,
+   "pushed_at": "2026-11-07",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
   },
   {
    "repo": "uxandy/frame-input",
@@ -1997,8 +2235,8 @@
    "description": "Double knock to toggle Steam Frame passthrough",
    "note": "Double-knock to toggle passthrough",
    "license": "MIT",
-   "stars": 14,
-   "pushed_at": "2026-10-28",
+   "stars": 26,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "passthrough"
@@ -2015,8 +2253,8 @@
    "description": "Your way to enjoy VR on Linux. Run apps inside VR & access your Wayland/X11 screens from Monado/WiVRn/SteamVR.",
    "note": "Wayland and X11 windows in VR",
    "license": "GPL-3.0",
-   "stars": 1472,
-   "pushed_at": "2026-11-01",
+   "stars": 1483,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "desktop",
@@ -2034,8 +2272,8 @@
    "description": "The Linux OpenXR streaming application to standalone headsets",
    "note": "OpenXR streaming from a Linux PC",
    "license": "GPL-3.0",
-   "stars": 1833,
-   "pushed_at": "2026-10-30",
+   "stars": 1853,
+   "pushed_at": "2026-11-07",
    "archived": false,
    "provides": [
     "streaming"
@@ -2047,13 +2285,29 @@
    "source": "curated"
   },
   {
+   "repo": "Wurby/sideframe",
+   "url": "https://github.com/Wurby/sideframe",
+   "description": "Your Mac desktop in your Steam Frame, as a SteamVR dashboard tab",
+   "note": null,
+   "license": "MIT",
+   "stars": 0,
+   "pushed_at": "2026-11-06",
+   "archived": false,
+   "provides": [],
+   "implements": [],
+   "runs_on": null,
+   "install": null,
+   "tested": [],
+   "source": "topic"
+  },
+  {
    "repo": "xhuytox/scrcpy4Frame",
    "url": "https://github.com/xhuytox/scrcpy4Frame",
    "description": "scrcpy wrapper for Steam Frame",
    "note": "Android phone mirroring in VR",
    "license": "MIT",
-   "stars": 20,
-   "pushed_at": "2026-10-24",
+   "stars": 23,
+   "pushed_at": "2026-11-08",
    "archived": false,
    "provides": [
     "streaming"
