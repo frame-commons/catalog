@@ -25,6 +25,7 @@
 - {repo: miyu0-bit/frameeye-helper, provides: [eyes, tooling], note: "Installer for frameeyeosc"}
 - {repo: Project-Babble/Babble-Frame-Runtime, provides: [eyes, face], runs_on: headset, note: "Eye and mouth expressions on the headset, into VRCFaceTracking"}
 - {repo: huntergcook/SquintThru, provides: [eyes, passthrough], note: "Squint to toggle passthrough"}
+- {repo: steffandonal/SRanipatch, provides: [face], runs_on: both}
 
 # Passthrough
 - {repo: KominoVR/frame-passthrough-shortcuts, provides: [passthrough, input], note: "Controller shortcuts for passthrough, including the colour camera module"}
