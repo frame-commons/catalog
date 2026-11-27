@@ -54,6 +54,7 @@
 - {repo: Andalu30/frame-unboundedMouse-vibed, provides: [input], note: "A mouse drives the laser pointer"}
 - {repo: MichaelScottsman/nso-frame-bridge, provides: [input], note: "Nintendo Switch Online GameCube controller over Bluetooth"}
 - {repo: uxandy/frame-input, provides: [input], note: "Shares keyboard and mouse with a Windows PC"}
+- {repo: PhoenixSheppy/lhctl, provides: [hardware, overlay], note: "Control your SteamVR Base Stations 2.0 directly from your Steam Frame over Bluetooth"}
 
 # Desktop and windows
 - {repo: tovakai/frametop, provides: [desktop], note: "Frametop fork with a plugin framework"}
